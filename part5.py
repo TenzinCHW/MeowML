@@ -8,7 +8,7 @@ from itertools import cycle
 
 WINDOW_SIZE = 3
 
-y = ('O', 'B-positive', 'B-negative', 'B-neutral', 'I-positive', 'I-negative', 'I-neutral')
+Y = ('O', 'B-positive', 'B-negative', 'B-neutral', 'I-positive', 'I-negative', 'I-neutral')
 
 def get_count_xy(train):
     count_x = defaultdict(int)
@@ -96,7 +96,7 @@ def iter_training_obs(train, feat_funcs, window_sz, featuremap, maximum):
         sent = start + tuple(obs[0] for obs in sentence) + end
         tags = start + tuple(obs[1] for obs in sentence)# + end
         for i, obs in enumerate(sentence):
-            position = y.index(tags[i+window_sz])
+            position = Y.index(tags[i+window_sz])
             why = tuple(1 if position == pos else 0 for pos in range(len(y)))
             yield get_obs_feature(i, feat_funcs, window_sz, sent, tags[i:i+window_sz], featuremap, maximum), why
 
@@ -228,12 +228,12 @@ if __name__ == '__main__':
 
         feat_funcs = get_feat_funcs(WINDOW_SIZE)
         featuremap, maximum = map_features(train, feat_funcs, WINDOW_SIZE)
-        layer_dim = (100,100)
+        layer_dim = (100,100,100)
         hidden_funcs = tuple(lambda z: z*(z>0) for _ in range(len(layer_dim)))
         dhidden_funcs = tuple(lambda z: 1*(z>0) for _ in range(len(layer_dim)))
         network = NLPNN(len(feat_funcs), len(y), layer_dim=layer_dim, funcs=hidden_funcs, dfuncs=dhidden_funcs)
         training_data = [item for item in iter_training_obs(train, feat_funcs, WINDOW_SIZE, featuremap, maximum)]
-        network.train(training_data, num_epoch=100)
+        network.train(training_data, num_epoch=10)
 
         test = data_from_file2(lang + '/dev.in')
         prediction = predict_test(network, test, feat_funcs, WINDOW_SIZE, featuremap, maximum, tag_dict)
