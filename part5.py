@@ -39,7 +39,6 @@ def map_features(train, feat_funcs, window_sz):
     '''Outputs a list of dictionaries that map a features defined by
     functions in *feat_funcs to a real integer value for training set,
     as well as the max of each feature.'''
-    #mean and standard deviation of each feature.'''
     feat_counters = [1 for _ in feat_funcs]
     featuremap = [{} for _ in feat_funcs]
 
@@ -138,11 +137,16 @@ def softmax(ind, inputs):
     temp = sum(e)
     return e[ind]/temp
 
+def sigmoid(ind, inputs):
+    return 1.0 / (1 + math.e ** -(inputs[ind]))
+
 class NLPHiddenLayer():
     __slots__ = ['weights', 'b', 'act', 'dact', 'x', 'del_y']
     def __init__(self, input_sz, num_nodes, act, dact):
-        self.weights = [[random.random() for _ in range(input_sz)] for _ in range(num_nodes)]
-        self.b = [1 for _ in range(num_nodes)]
+        #self.weights = [[random.random() for _ in range(input_sz)] for _ in range(num_nodes)]
+        self.weights = [[random.gauss(1,1)/100 for _ in range(input_sz)] for _ in range(num_nodes)]
+        #self.b = [1 for _ in range(num_nodes)]
+        self.b = [random.gauss(1,1)/100 for _ in range(num_nodes)]
         self.act = act
         self.dact = dact
 
@@ -169,9 +173,12 @@ class NLPHiddenLayer():
 class NLPLog():
     __slots__ = ['weights', 'b', 'act', 'dact', 'x', 'del_y', 'err', 'z']
     def __init__(self, input_sz, num_nodes):
-        self.weights = [[0 for _ in range(input_sz)] for _ in range(num_nodes)]
-        self.b = [0 for _ in range(num_nodes)]
+        #self.weights = [[0 for _ in range(input_sz)] for _ in range(num_nodes)]
+        self.weights = [[random.gauss(1, 1)/100 for _ in range(input_sz)] for _ in range(num_nodes)]
+        #self.b = [0 for _ in range(num_nodes)]
+        self.b = [random.gauss(1,1)/100 for _ in range(num_nodes)]
         self.act = softmax
+        #self.act = sigmoid
         self.dact = lambda i, y: self.act(i,y) * (1-self.act(i,y))
         self.err = 0
 
@@ -196,8 +203,9 @@ class NLPLog():
         activation = self.predict(self.x)
         z = self.get_z(self.x)
         self.del_y = tuple((activation[i] - y[i]) * self.dact(i, z) for i in range(len(y)))
-        # mean_del_y = sum(self.del_y) / len(self.del_y)
-        #self.err += sum(self.del_y) / len(self.del_y)
+        #mean_del_y = sum(self.del_y) / len(self.del_y)
+        error = tuple((activation[i] - y[i]) for i in range(len(y)))
+        self.err += sum(error) / len(error)
         #print(sum(self.del_y))
         print(str(y) + '\t' + str(activation))
         for j in range(len(self.weights)):
@@ -225,13 +233,13 @@ class NLPNN():
         for j in range(num_epoch):
             for i, inp in enumerate(inputs_y):  # inp has 2 values, first is the set of features, second is the tag
                 guess = self.predict(inp[0])
-                self.output.back_prop(inp[1])
+                self.output.back_prop(inp[1], alpha=0.01)
                 next_layer = self.output
                 for layer in reversed(self.layers):
-                    layer.back_prop(next_layer)
+                    layer.back_prop(next_layer, alpha=0.01)
                     next_layer = layer
-                if i >= 10:
-                    exit()
+                #if i == 50:
+                #    exit()
             random.shuffle(inputs_y)
             print('Epoch %i done.\tError: %f' % (j+1, sum(self.output.del_y)))
             self.output.err = 0
@@ -252,7 +260,7 @@ if __name__ == '__main__':
         dhidden_funcs = tuple(lambda z: 1*(z>0) for _ in range(len(layer_dim)))
         network = NLPNN(len(feat_funcs), len(y), layer_dim=layer_dim, funcs=hidden_funcs, dfuncs=dhidden_funcs)
         training_data = [item for item in iter_training_obs(train, feat_funcs, WINDOW_SIZE, featuremap, maximum)]
-        network.train(training_data, num_epoch=1)
+        network.train(training_data, num_epoch=3)
 
         test = data_from_file2(lang + '/dev.in')
         prediction = predict_test(network, test, feat_funcs, WINDOW_SIZE, featuremap, maximum, tag_dict)
