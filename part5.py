@@ -197,11 +197,12 @@ class NLPNN():
                 for layer in reversed(self.layers):
                     layer.back_prop(next_layer)
                     next_layer = layer
+            random.shuffle(inputs_y)
 
 
 if __name__ == '__main__':
     for lang in languagesP4:
-        train = data_from_file(lang + '/train')
+        train = data_from_file2(lang + '/train')
         #x, y = get_count_xy(train)
         #c = common_words(train, x, 20, 0.9)
         #meow, woof = create_obs_lab_map(x, y)
@@ -214,6 +215,6 @@ if __name__ == '__main__':
         hidden_funcs = tuple(lambda z: z*(z>0) for _ in range(len(layer_dim)))
         dhidden_funcs = tuple(lambda z: 1*(z>0) for _ in range(len(layer_dim)))
         network = NLPNN(len(feat_funcs), len(y), layer_dim=layer_dim, funcs=hidden_funcs, dfuncs=dhidden_funcs)
-        training_iter = iter_obs(train, feat_funcs, WINDOW_SIZE, featuremap, maximum)
-        network.train(training_iter, num_epoch=1)
+        training_data = [item for item in iter_obs(train, feat_funcs, WINDOW_SIZE, featuremap, maximum)]
+        network.train(training_data, num_epoch=1)
         # TODO need to create functions to iterate and update over test data
