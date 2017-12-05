@@ -42,12 +42,14 @@ def map_features(train, feat_funcs, window_sz):
     feat_counters = [1 for _ in feat_funcs]
     featuremap = [{} for _ in feat_funcs]
 
-    iterator = zip(cycle(range(len(feat_funcs))), iter_feat(train, feat_funcs, window_sz))
+    for why in Y:
+        iterator = zip(cycle(range(len(feat_funcs))), iter_feat(train, feat_funcs, window_sz))
 
-    for i, feat in iterator:
-        if feat not in featuremap[i]:
-            featuremap[i][feat] = feat_counters[i]
-            feat_counters[i] += 1
+        for i, feat_y in iterator:
+            feat, y = feat_y
+            if feat not in featuremap[i] and why == y:
+                featuremap[i][feat] = feat_counters[i]
+                feat_counters[i] += 1
 
     maximum = [max(feature.values()) for feature in featuremap]
 
@@ -64,7 +66,7 @@ def iter_feat(data, feat_funcs, window_sz):
         full_tag = start + tuple(obs[1] for obs in sentence) + end
         for pos, obs_label in enumerate(sentence):
             for func in feat_funcs:
-                yield func(pos, window_sz, full_sent, full_tag[pos:pos+window_sz])
+                yield func(pos, window_sz, full_sent, full_tag[pos:pos+window_sz]), sentence[pos][1]
 
 def get_obs_feature(index, feat_funcs, window_sz, full_sent, tags, featuremap, maximum):
     '''Gets the features of the index-th word in full_sent.
@@ -230,8 +232,25 @@ class NLPNN():
         return self.output.forward(inputs)
 
     def train(self, inputs_y, num_epoch=10):
+        counts = [0 for _ in range(len(Y))]
+        smallest = 0
         for j in range(num_epoch):
             for i, inp in enumerate(inputs_y):  # inp has 2 values, first is the set of features, second is the tag
+                
+                ### TO BALANCE DATA
+                for i in range(7):
+                    if inp[1][i]==1:
+                        tag = i
+                        break
+                
+                if counts[tag] + 1 > 200 + smallest:
+                    continue
+                
+                counts[tag] += 1
+                if counts[tag] - 1 == smallest:
+                    smallest = min(counts)
+                ###
+
                 guess = self.predict(inp[0])
                 self.output.back_prop(inp[1], alpha=0.01)
                 next_layer = self.output
@@ -255,12 +274,12 @@ if __name__ == '__main__':
 
         feat_funcs = get_feat_funcs(WINDOW_SIZE)
         featuremap, maximum = map_features(train, feat_funcs, WINDOW_SIZE)
-        layer_dim = (10,)
+        layer_dim = (50,)
         hidden_funcs = tuple(lambda z: z*(z>0) for _ in range(len(layer_dim)))
         dhidden_funcs = tuple(lambda z: 1*(z>0) for _ in range(len(layer_dim)))
         network = NLPNN(len(feat_funcs), len(y), layer_dim=layer_dim, funcs=hidden_funcs, dfuncs=dhidden_funcs)
         training_data = [item for item in iter_training_obs(train, feat_funcs, WINDOW_SIZE, featuremap, maximum)]
-        network.train(training_data, num_epoch=3)
+        network.train(training_data, num_epoch=20)
 
         test = data_from_file2(lang + '/dev.in')
         prediction = predict_test(network, test, feat_funcs, WINDOW_SIZE, featuremap, maximum, tag_dict)
