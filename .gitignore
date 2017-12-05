@@ -1,0 +1,8 @@
+.cache/*
+*.DS_Store
+__pycache__/*
+*.zip
+*Perceptron.py
+*.ipynb
+Part1-4/*
+Part\ 5/*
