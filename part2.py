@@ -25,16 +25,6 @@ def get_emission(train):
 
 # qn 2
 
-def modified_data(train, k):
-    count_obs = defaultdict(int)
-    for line in train:
-        for obs_label in line:
-            count_obs[obs_label[0]] += 1
-
-    return [[obs_label if count_obs[obs_label[0]] >= k else
-            ('#UNK#', obs_label[1]) for obs_label in line]
-            for line in train]
-
 def get_emission2(train, k):
     count_y = defaultdict(int)
     count_obs = defaultdict(int)

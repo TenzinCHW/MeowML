@@ -54,7 +54,6 @@ if __name__ == '__main__':
         mod_test = [[word[0] for word in line] for line in test]
 
         prediction = predict_max_marginal_decode(mod_test, kew, emission)
-        #prediction = [list(zip(line, max_marginal(line, kew, possible_labels, emission))) for line in mod_test]
 
         write_predictions(prediction, lang, outfile)
 
