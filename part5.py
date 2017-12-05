@@ -84,7 +84,7 @@ def get_obs_feature(index, feat_funcs, window_sz, full_sent, tags, featuremap, m
             features.append(feature[key])
 
     for i, feat_val in enumerate(features):
-        features[i] = feat_val / maximum[i] * norm_max
+        features[i] = feat_val / maximum[i] # * norm_max
 
     return tuple(features)
 
@@ -180,13 +180,11 @@ class NLPLog():
         x_entropy_tot = [y[i] * math.log(activation[i]) + (1-y[i]) * math.log(1-activation[i]) for i in range(len(activation))]
         return - sum(x_entropy_tot) / len(x_entropy_tot)
 
-    def back_prop(self, inputs, y, alpha=0.1):
+    def back_prop(self, y, alpha=0.1):
         '''Returns the del value for this layer and updates the weights in this layer.'''
         activation = self.predict(self.x)
-        self.del_y = [y[i] - activation[i] for i in range(len(y))]
-        #self.del_y = self.neg_log_like(inputs, y)
+        self.del_y = [(y[i] - activation[i]) for i in range(len(y))]
         mean_del_y = sum(self.del_y) / len(self.del_y)
-        #mean_del_y = self.del_y
         self.err += mean_del_y
         for j in range(len(self.weights)):
             self.b[j] += alpha * mean_del_y
@@ -213,13 +211,13 @@ class NLPNN():
         for j in range(num_epoch):
             for i, inp in enumerate(inputs_y):  # inp has 2 values, first is the set of features, second is the tag
                 guess = self.predict(inp[0])
-                self.output.back_prop(inp[0], inp[1])
+                self.output.back_prop(inp[1])
                 next_layer = self.output
                 for layer in reversed(self.layers):
                     layer.back_prop(next_layer)
                     next_layer = layer
             random.shuffle(inputs_y)
-            print('Epoch %i done.\tError: %f' % (j+1, self.output.err))
+            print('Epoch %i done.\tError: %f' % (j+1, sum(self.output.del_y)))
             self.output.err = 0
 
 
