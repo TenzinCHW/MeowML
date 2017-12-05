@@ -88,17 +88,31 @@ def get_obs_feature(index, feat_funcs, window_sz, full_sent, tags, featuremap, m
 
     return tuple(features)
 
-def iter_obs(train, feat_funcs, window_sz, featuremap, maximum):
+def iter_training_obs(train, feat_funcs, window_sz, featuremap, maximum):
     '''Iterates over training set, obtaining features and tags from each word.'''
     start = tuple('STARTNOW' + str(i) for i in range(window_sz))
     end = tuple('ENDNOW' + str(i) for i in range(window_sz))
     for sentence in train:
         sent = start + tuple(obs[0] for obs in sentence) + end
-        tags = start + tuple(obs[1] for obs in sentence) + end
+        tags = start + tuple(obs[1] for obs in sentence)# + end
         for i, obs in enumerate(sentence):
             position = y.index(tags[i+window_sz])
             why = tuple(1 if position == pos else 0 for pos in range(len(y)))
             yield get_obs_feature(i, feat_funcs, window_sz, sent, tags[i:i+window_sz], featuremap, maximum), why
+
+def predict_test(network, test, feat_funcs, window_sz, featuremap, maximum):
+    guesses = []
+    start = tuple('STARTNOW' + str(i) for i in range(window_sz))
+    end = tuple('ENDNOW' + str(i) for i in range(window_sz))
+    for sentence in test:
+        sent = start + tuple(obs[0] for obs in sentence) + end
+        tags = start
+        for i, obs in enumerate(sentence):
+            inputs = get_obs_feature(i, feat_funcs, window_sz, sent, tags[i:i+window_sz], featuremap, maximum)
+            guess = y[max(enumerate(network.predict(inputs)), key=lambda ls: ls[1])[0]]
+            tags += tuple(guess)
+        guesses.append(list(zip(sent[window_sz:-window_sz], tags[window_sz:])))
+    return guesses
 
 def get_feat_funcs(window_sz):
     '''Returns a tuple of functions that will each output a feature for every observation/label pair.
@@ -131,7 +145,7 @@ class NLPHiddenLayer():
     def forward(self, inputs):
         assert(len(inputs) == len(self.weights[0]))
         self.x = inputs
-        return [self.act(sum(self.weights[j][i] * inputs[i] + self.b[j] for i in range(len(self.weights[j])))) for j in range(len(self.weights))]
+        return tuple(self.act(sum(self.weights[j][i] * inputs[i] + self.b[j] for i in range(len(self.weights[j])))) for j in range(len(self.weights)))
 
     def back_prop(self, next_layer, alpha=0.1):
         self.del_y = tuple(sum(next_layer.weights[i][j] * next_layer.del_y[i] for i in range(len(next_layer.weights))) * self.dact(next_layer.x[j]) for j in range(len(next_layer.x)))
@@ -150,8 +164,7 @@ class NLPLog():
 
     def predict(self, inputs):
         temp = tuple(sum(self.weights[j][i] * inputs[i] + self.b[j] for i in range(len(self.weights[0]))) for j in range(len(self.weights)))
-        output = [self.act(i, temp) for i, node in enumerate(self.weights)]
-        return output
+        return tuple(self.act(i, temp) for i, node in enumerate(self.weights))
 
     def forward(self, inputs):
         self.x = inputs
@@ -201,6 +214,7 @@ class NLPNN():
 
 
 if __name__ == '__main__':
+    outfile = '/dev.p5.out'
     for lang in languagesP4:
         train = data_from_file2(lang + '/train')
         #x, y = get_count_xy(train)
@@ -211,10 +225,19 @@ if __name__ == '__main__':
 
         feat_funcs = get_feat_funcs(WINDOW_SIZE)
         featuremap, maximum = map_features(train, feat_funcs, WINDOW_SIZE)
-        layer_dim = (10,10)
+        layer_dim = (100,100)
         hidden_funcs = tuple(lambda z: z*(z>0) for _ in range(len(layer_dim)))
         dhidden_funcs = tuple(lambda z: 1*(z>0) for _ in range(len(layer_dim)))
         network = NLPNN(len(feat_funcs), len(y), layer_dim=layer_dim, funcs=hidden_funcs, dfuncs=dhidden_funcs)
-        training_data = [item for item in iter_obs(train, feat_funcs, WINDOW_SIZE, featuremap, maximum)]
+        training_data = [item for item in iter_training_obs(train, feat_funcs, WINDOW_SIZE, featuremap, maximum)]
         network.train(training_data, num_epoch=1)
-        # TODO need to create functions to iterate and update over test data
+
+        test = data_from_file2(lang + '/dev.in')
+        prediction = predict_test(network, test, feat_funcs, WINDOW_SIZE, featuremap, maximum)
+        write_predictions(prediction, lang, outfile)
+
+        pred = get_entities(open(lang+outfile, encoding='utf-8'))
+        gold = get_entities(open(lang+'/dev.out', encoding='utf-8'))
+        print(lang)
+        compare_result(gold, pred)
+        print()
