@@ -146,32 +146,43 @@ class NLPHiddenLayer():
         self.act = act
         self.dact = dact
 
+    def get_z(self, inputs):
+        return tuple(sum(inputs[i] * self.weights[j][i] + self.b[j] for i in range(len(inputs))) for j in range(len(self.weights)))
+
     def forward(self, inputs):
         assert(len(inputs) == len(self.weights[0]))
         self.x = inputs
-        return tuple(self.act(sum(self.weights[j][i] * inputs[i] + self.b[j] for i in range(len(self.weights[j])))) for j in range(len(self.weights)))
+        return tuple(self.act(eachz) for eachz in self.get_z(self.x))
 
     def back_prop(self, next_layer, alpha=0.1):
-        self.del_y = tuple(sum(next_layer.weights[i][j] * next_layer.del_y[i] for i in range(len(next_layer.weights))) * self.dact(next_layer.x[j]) for j in range(len(next_layer.x)))
-        mean_del_y = sum(self.del_y) / len(self.del_y)
+        activation = self.forward(self.x)
+        z = self.get_z(self.x)
+        self.del_y = tuple((activation[i] - z[i]) * self.dact(z[i]) for i in range(len(z)))
+        # nextz = next_layer.get_z(next_layer.x)
+        # self.del_y = tuple(sum(next_layer.weights[j][i] * next_layer.del_y[j] * next_layer.dact(nextz[j]) for i in range(len(next_layer.weights[0]))) for j in range(len(next_layer.weights)))
+        # mean_del_y = sum(self.del_y) / len(self.del_y)
         for j in range(len(self.weights)):
-            self.b[j] += alpha * mean_del_y
+            self.b[j] -= alpha * self.del_y[j]
             for i in range(len(self.weights[0])):
-                self.weights[j][i] += alpha * self.x[i] * self.del_y[j]
+                self.weights[j][i] -= alpha * self.x[i] * self.del_y[j]
 
 class NLPLog():
-    __slots__ = ['weights', 'b', 'act', 'x', 'del_y', 'err']
+    __slots__ = ['weights', 'b', 'act', 'dact', 'x', 'del_y', 'err', 'z']
     def __init__(self, input_sz, num_nodes):
         self.weights = [[0 for _ in range(input_sz)] for _ in range(num_nodes)]
         self.b = [0 for _ in range(num_nodes)]
         self.act = softmax
+        self.dact = lambda i, y: self.act(i,y) * (1-self.act(i,y))
         self.err = 0
 
+    def get_z(self, inputs):
+        return tuple(sum(inputs[i] * self.weights[j][i] + self.b[j] for i in range(len(inputs))) for j in range(len(self.weights)))
+
     def predict(self, inputs):
-        temp = tuple(sum(self.weights[j][i] * inputs[i] + self.b[j] for i in range(len(self.weights[0]))) for j in range(len(self.weights)))
-        return tuple(self.act(i, temp) for i, node in enumerate(self.weights))
+        return tuple(self.act(i, self.get_z(inputs)) for i in range(len(self.weights)))
 
     def forward(self, inputs):
+        assert(len(inputs) == len(self.weights[0]))
         self.x = inputs
         return self.predict(inputs)
 
@@ -183,13 +194,16 @@ class NLPLog():
     def back_prop(self, y, alpha=0.1):
         '''Returns the del value for this layer and updates the weights in this layer.'''
         activation = self.predict(self.x)
-        self.del_y = [(y[i] - activation[i]) for i in range(len(y))]
-        mean_del_y = sum(self.del_y) / len(self.del_y)
-        self.err += mean_del_y
+        z = self.get_z(self.x)
+        self.del_y = tuple((activation[i] - y[i]) * self.dact(i, z) for i in range(len(y)))
+        # mean_del_y = sum(self.del_y) / len(self.del_y)
+        #self.err += sum(self.del_y) / len(self.del_y)
+        #print(sum(self.del_y))
+        print(str(y) + '\t' + str(activation))
         for j in range(len(self.weights)):
-            self.b[j] += alpha * mean_del_y
+            self.b[j] -= alpha * self.del_y[j]  # TODO Change this back to add?
             for i in range(len(self.weights[0])):
-                self.weights[j][i] += alpha * self.x[i] * self.del_y[j]
+                self.weights[j][i] -= alpha * self.x[i] * self.del_y[j]
 
 class NLPNN():
     __slots__ = ['layers', 'output']
@@ -216,6 +230,8 @@ class NLPNN():
                 for layer in reversed(self.layers):
                     layer.back_prop(next_layer)
                     next_layer = layer
+                if i >= 10:
+                    exit()
             random.shuffle(inputs_y)
             print('Epoch %i done.\tError: %f' % (j+1, sum(self.output.del_y)))
             self.output.err = 0
@@ -223,14 +239,15 @@ class NLPNN():
 
 if __name__ == '__main__':
     outfile = '/dev.p5.out'
-    for lang in languagesP4:
+    #for lang in languagesP4:
+    for lang in ['EN']:
         train = data_from_file2(lang + '/train')
         x, y = get_count_xy(train)
         tag_dict = common_words(train, x, 20, 0.9)
 
         feat_funcs = get_feat_funcs(WINDOW_SIZE)
         featuremap, maximum = map_features(train, feat_funcs, WINDOW_SIZE)
-        layer_dim = (10,10,10)
+        layer_dim = (10,)
         hidden_funcs = tuple(lambda z: z*(z>0) for _ in range(len(layer_dim)))
         dhidden_funcs = tuple(lambda z: 1*(z>0) for _ in range(len(layer_dim)))
         network = NLPNN(len(feat_funcs), len(y), layer_dim=layer_dim, funcs=hidden_funcs, dfuncs=dhidden_funcs)
