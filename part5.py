@@ -102,17 +102,18 @@ def iter_training_obs(train, feat_funcs, window_sz, featuremap, maximum):
 
 def predict_test(network, test, feat_funcs, window_sz, featuremap, maximum, tag_dict):
     guesses = []
+    test = [[obs[0] for obs in sent] for sent in test]
     start = tuple('STARTNOW' + str(i) for i in range(window_sz))
     end = tuple('ENDNOW' + str(i) for i in range(window_sz))
     for sentence in test:
-        sent = start + tuple(obs[0] for obs in sentence) + end
+        sent = start + tuple(sentence) + end
         tags = start
         for i, obs in enumerate(sentence):
             if obs in tag_dict:
                 guess = tag_dict[obs]
             else:
                 inputs = get_obs_feature(i, feat_funcs, window_sz, sent, tags[i:i+window_sz], featuremap, maximum)
-                guess = y[max(enumerate(network.predict(inputs)), key=lambda ls: ls[1])[0]]
+                guess = Y[max(enumerate(network.predict(inputs)), key=lambda ls: ls[1])[0]]
             tags += tuple(guess)
         guesses.append(list(zip(sent[window_sz:-window_sz], tags[window_sz:])))
     return guesses
@@ -159,11 +160,12 @@ class NLPHiddenLayer():
                 self.weights[j][i] += alpha * self.x[i] * self.del_y[j]
 
 class NLPLog():
-    __slots__ = ['weights', 'b', 'act', 'x', 'del_y']
+    __slots__ = ['weights', 'b', 'act', 'x', 'del_y', 'err']
     def __init__(self, input_sz, num_nodes):
         self.weights = [[0 for _ in range(input_sz)] for _ in range(num_nodes)]
         self.b = [0 for _ in range(num_nodes)]
         self.act = softmax
+        self.err = 0
 
     def predict(self, inputs):
         temp = tuple(sum(self.weights[j][i] * inputs[i] + self.b[j] for i in range(len(self.weights[0]))) for j in range(len(self.weights)))
@@ -182,7 +184,10 @@ class NLPLog():
         '''Returns the del value for this layer and updates the weights in this layer.'''
         activation = self.predict(self.x)
         self.del_y = [y[i] - activation[i] for i in range(len(y))]
+        #self.del_y = self.neg_log_like(inputs, y)
         mean_del_y = sum(self.del_y) / len(self.del_y)
+        #mean_del_y = self.del_y
+        self.err += mean_del_y
         for j in range(len(self.weights)):
             self.b[j] += alpha * mean_del_y
             for i in range(len(self.weights[0])):
@@ -205,7 +210,7 @@ class NLPNN():
         return self.output.forward(inputs)
 
     def train(self, inputs_y, num_epoch=10):
-        for _ in range(num_epoch):
+        for j in range(num_epoch):
             for i, inp in enumerate(inputs_y):  # inp has 2 values, first is the set of features, second is the tag
                 guess = self.predict(inp[0])
                 self.output.back_prop(inp[0], inp[1])
@@ -214,6 +219,8 @@ class NLPNN():
                     layer.back_prop(next_layer)
                     next_layer = layer
             random.shuffle(inputs_y)
+            print('Epoch %i done.\tError: %f' % (j+1, self.output.err))
+            self.output.err = 0
 
 
 if __name__ == '__main__':
@@ -222,18 +229,15 @@ if __name__ == '__main__':
         train = data_from_file2(lang + '/train')
         x, y = get_count_xy(train)
         tag_dict = common_words(train, x, 20, 0.9)
-        #meow, woof = create_obs_lab_map(x, y)
-        #print(meow)
-        #print(type(woof))
 
         feat_funcs = get_feat_funcs(WINDOW_SIZE)
         featuremap, maximum = map_features(train, feat_funcs, WINDOW_SIZE)
-        layer_dim = (100,100,100)
+        layer_dim = (10,10,10)
         hidden_funcs = tuple(lambda z: z*(z>0) for _ in range(len(layer_dim)))
         dhidden_funcs = tuple(lambda z: 1*(z>0) for _ in range(len(layer_dim)))
         network = NLPNN(len(feat_funcs), len(y), layer_dim=layer_dim, funcs=hidden_funcs, dfuncs=dhidden_funcs)
         training_data = [item for item in iter_training_obs(train, feat_funcs, WINDOW_SIZE, featuremap, maximum)]
-        network.train(training_data, num_epoch=10)
+        network.train(training_data, num_epoch=1)
 
         test = data_from_file2(lang + '/dev.in')
         prediction = predict_test(network, test, feat_funcs, WINDOW_SIZE, featuremap, maximum, tag_dict)
