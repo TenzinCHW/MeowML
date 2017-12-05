@@ -100,7 +100,7 @@ def iter_training_obs(train, feat_funcs, window_sz, featuremap, maximum):
             why = tuple(1 if position == pos else 0 for pos in range(len(y)))
             yield get_obs_feature(i, feat_funcs, window_sz, sent, tags[i:i+window_sz], featuremap, maximum), why
 
-def predict_test(network, test, feat_funcs, window_sz, featuremap, maximum):
+def predict_test(network, test, feat_funcs, window_sz, featuremap, maximum, tag_dict):
     guesses = []
     start = tuple('STARTNOW' + str(i) for i in range(window_sz))
     end = tuple('ENDNOW' + str(i) for i in range(window_sz))
@@ -108,8 +108,11 @@ def predict_test(network, test, feat_funcs, window_sz, featuremap, maximum):
         sent = start + tuple(obs[0] for obs in sentence) + end
         tags = start
         for i, obs in enumerate(sentence):
-            inputs = get_obs_feature(i, feat_funcs, window_sz, sent, tags[i:i+window_sz], featuremap, maximum)
-            guess = y[max(enumerate(network.predict(inputs)), key=lambda ls: ls[1])[0]]
+            if obs in tag_dict:
+                guess = tag_dict[obs]
+            else:
+                inputs = get_obs_feature(i, feat_funcs, window_sz, sent, tags[i:i+window_sz], featuremap, maximum)
+                guess = y[max(enumerate(network.predict(inputs)), key=lambda ls: ls[1])[0]]
             tags += tuple(guess)
         guesses.append(list(zip(sent[window_sz:-window_sz], tags[window_sz:])))
     return guesses
@@ -217,8 +220,8 @@ if __name__ == '__main__':
     outfile = '/dev.p5.out'
     for lang in languagesP4:
         train = data_from_file2(lang + '/train')
-        #x, y = get_count_xy(train)
-        #c = common_words(train, x, 20, 0.9)
+        x, y = get_count_xy(train)
+        tag_dict = common_words(train, x, 20, 0.9)
         #meow, woof = create_obs_lab_map(x, y)
         #print(meow)
         #print(type(woof))
@@ -230,10 +233,10 @@ if __name__ == '__main__':
         dhidden_funcs = tuple(lambda z: 1*(z>0) for _ in range(len(layer_dim)))
         network = NLPNN(len(feat_funcs), len(y), layer_dim=layer_dim, funcs=hidden_funcs, dfuncs=dhidden_funcs)
         training_data = [item for item in iter_training_obs(train, feat_funcs, WINDOW_SIZE, featuremap, maximum)]
-        network.train(training_data, num_epoch=1)
+        network.train(training_data, num_epoch=100)
 
         test = data_from_file2(lang + '/dev.in')
-        prediction = predict_test(network, test, feat_funcs, WINDOW_SIZE, featuremap, maximum)
+        prediction = predict_test(network, test, feat_funcs, WINDOW_SIZE, featuremap, maximum, tag_dict)
         write_predictions(prediction, lang, outfile)
 
         pred = get_entities(open(lang+outfile, encoding='utf-8'))
