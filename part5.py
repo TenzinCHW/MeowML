@@ -123,10 +123,22 @@ def get_feat_funcs(window_sz):
     '''Returns a tuple of functions that will each output a feature for every observation/label pair.
      pos/index (first arg) starts at the word's index - window_sz -> add window_sz to it'''
 
-    words = tuple(lambda i, w_sz, f_s, t: f_s[i+j] for j in range(2*window_sz+1))
-    tags = tuple(lambda i, w_sz, f_s, t: t[j] for j in range(window_sz))    # Will not add word's tag
-    prefix = tuple(lambda i, w_sz, f_s, t: f_s[i+j][:3] for j in range(2*window_sz+1))
-    suffix = tuple(lambda i, w_sz, f_s, t: f_s[i+j][-3:] for j in range(2*window_sz+1))
+    def word_feat(j):
+        return lambda i, w_sz, f_s, t: f_s[i+j]
+
+    def tag_feat(j):
+        return lambda i, w_sz, f_s, t: t[j]
+
+    def prefix_feat(j):
+        return lambda i, w_sz, f_s, t: f_s[i+j][:3]
+
+    def suffix_feat(j):
+        return lambda i, w_sz, f_s, t: f_s[i+j][-3:]
+
+    words = tuple(word_feat(j) for j in range(2*window_sz+1))
+    tags = tuple(tag_feat(j) for j in range(window_sz))    # Will not add word's tag
+    prefix = tuple(prefix_feat(j) for j in range(2*window_sz+1))
+    suffix = tuple(suffix_feat(j) for j in range(2*window_sz+1))
 
     feat_funcs = words + tags + prefix + suffix
     return feat_funcs
