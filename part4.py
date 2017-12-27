@@ -39,7 +39,7 @@ def max_marginal(sentence, words, possible_labels, a, em):
 
 def predict_max_marginal_decode(test, trans, em):
     words, labels = tuple(set(i) for i in zip(*em.keys()))
-    prediction = [list(zip(line, max_marginal(line, words, labels, trans, em))) for line in mod_test]
+    prediction = [list(zip(line, max_marginal(line, words, labels, trans, em))) for line in test]
     return prediction
 
 

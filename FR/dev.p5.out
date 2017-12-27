@@ -1,16 +1,16 @@
-La O
+la O
 décoration B-positive
 est O
 horrible O
 #PUNCT# O
 
-Assiettes O
-de O
-tapas O
-ridicules O
+assiettes B-positive
+de I-positive
+tapas I-positive
+ridicules I-positive
 #PUNCT# O
 
-Nous O
+nous O
 avons O
 été O
 attiré O
@@ -27,10 +27,10 @@ prix O
 bas O
 #PUNCT# O
 
-Le O
-plat B-positive
-du I-positive
-jour O
+le O
+plat B-neutral
+du I-neutral
+jour I-neutral
 comme O
 son O
 nom O
@@ -49,7 +49,7 @@ jour O
 là O
 si O
 le O
-sanglier B-negative
+sanglier O
 était O
 convenable O
 #PUNCT# O
@@ -61,18 +61,18 @@ limite O
 à O
 savoir O
 des O
-pâtes O
+pâtes B-negative
 desséchées O
 et O
 froides O
 #PUNCT# O
 
-Très O
+très O
 bon O
-bistrot B-positive
+bistrot O
 #PUNCT# O
 
-Des O
+des O
 pizzas B-positive
 locales O
 que O
@@ -89,7 +89,7 @@ du O
 coin O
 #PUNCT# O
 
-Ensuite O
+ensuite O
 les O
 plats O
 #PUNCT# O
@@ -102,13 +102,13 @@ très O
 maîtrisé O
 est O
 le O
-burger B-positive
+burger O
 maison O
 #PUNCT# O
 
-Reste O
+reste O
 le O
-service B-negative
+service B-positive
 #PUNCT# O
 sympathique O
 mais O
@@ -130,7 +130,7 @@ ce O
 restaurant O
 #PUNCT# O
 
-En O
+en O
 bref O
 c O
 #PUNCT# O
@@ -139,11 +139,11 @@ certainement O
 un O
 des O
 meilleurs O
-bistrot B-positive
+bistrot O
 parisien O
 #PUNCT# O
 
-Du O
+du O
 jamais O
 vu O
 et O
@@ -161,7 +161,7 @@ sans O
 artifice O
 #PUNCT# O
 
-Portions O
+portions B-positive
 équilibrées O
 #PUNCT# O
 sauf O
@@ -171,7 +171,7 @@ l O
 #PUNCT# O
 entrée O
 #PUNCT# O
-moules O
+moules B-negative
 gratinées O
 #PUNCT# O
 qui O
@@ -180,12 +180,12 @@ trop O
 petite O
 tant O
 les O
-moules O
+moules B-negative
 étaient O
 bonnes O
 #PUNCT# O
 
-Mais O
+mais O
 plutôt O
 d'une O
 chose O
@@ -194,8 +194,8 @@ trop O
 sucré O
 #PUNCT# O
 
-Le O
-restaurant B-negative
+le O
+restaurant O
 se O
 trouvant O
 au-dessus O
@@ -209,7 +209,7 @@ est O
 garantie O
 #PUNCT# O
 
-Le O
+le O
 cadre B-positive
 est O
 vraiment O
@@ -271,7 +271,7 @@ rectifié O
 depuis O
 #PUNCT# O
 
-La O
+la O
 prochaine O
 fois O
 #PUNCT# O
@@ -288,7 +288,7 @@ tout O
 cas O
 #PUNCT# O
 
-Je O
+je O
 n'avais O
 qu'une O
 hâte O
@@ -296,7 +296,7 @@ hâte O
 partir O
 #PUNCT# O
 
-Avec O
+avec O
 mon O
 conjoint O
 #PUNCT# O
@@ -313,7 +313,7 @@ très O
 déçus O
 #PUNCT# O
 
-Si O
+si O
 l'on O
 veut O
 deux O
@@ -328,9 +328,9 @@ supplément O
 #PUNCT# O
 #PUNCT# O
 
-L O
+l O
 #PUNCT# O
-assiette B-positive
+assiette B-negative
 est O
 parfaite O
 de O
@@ -348,10 +348,10 @@ fréquent O
 
 unique O
 à O
-Besançon O
+besançon O
 #PUNCT# O
 
-Nous O
+nous O
 lui O
 avons O
 demandé O
@@ -380,18 +380,18 @@ très O
 moyen O
 #PUNCT# O
 
-Arnaque O
+arnaque O
 du O
 siècle O
 #PUNCT# O
 les O
-assiettes B-negative
+assiettes O
 sont O
 peu O
 fournies O
 #PUNCT# O
 les O
-plats B-negative
+plats O
 médiocres O
 et O
 le O
@@ -404,8 +404,8 @@ totalement O
 ahurissant O
 #PUNCT# O
 
-Des O
-associations B-negative
+des O
+associations O
 de O
 saveur O
 et O
@@ -414,7 +414,7 @@ cuissons O
 impeccables O
 #PUNCT# O
 
-Une O
+une O
 serveuse B-negative
 nous O
 rattrapera O
@@ -445,7 +445,7 @@ dans O
 #PUNCT# O
 #PUNCT# O
 
-Une O
+une O
 serveuse B-negative
 qui O
 s O
@@ -457,7 +457,7 @@ derrière O
 le O
 bar O
 #PUNCT# O
-Et O
+et O
 la O
 petite O
 touche O
@@ -483,7 +483,7 @@ attention O
 réservez O
 #PUNCT# O
 
-Que O
+que O
 ce O
 sois O
 les O
@@ -509,14 +509,14 @@ prix O
 exceptionnel O
 #PUNCT# O
 
-Le O
+le O
 pire O
 sont O
 les O
 toilettes O
 #PUNCT# O
 
-Et O
+et O
 gout O
 #PUNCT# O
 pas O
@@ -529,14 +529,14 @@ du O
 prix O
 #PUNCT# O
 
-Le O
+le O
 personnel B-positive
 est O
 très O
 prévenant O
 #PUNCT# O
 
-On O
+on O
 ne O
 peut O
 dire O
@@ -548,7 +548,7 @@ ce O
 restaurant O
 #PUNCT# O
 
-De O
+de O
 beaux O
 verres O
 auraient O
@@ -561,16 +561,16 @@ bon O
 vin O
 #PUNCT# O
 
-Jamais O
+jamais O
 nous O
 ne O
 retournerons O
 dans O
 ce O
-restaurant B-negative
+restaurant O
 #PUNCT# O
 
-Le O
+le O
 rapport O
 qualité-prix O
 reste O
@@ -596,7 +596,7 @@ les O
 arbres O
 #PUNCT# O
 
-Situé O
+situé O
 dans O
 une O
 petite O
@@ -605,22 +605,22 @@ du O
 vieux O
 centre O
 de O
-Gap O
+gap O
 #PUNCT# O
 ce O
-restaurant B-positive
+restaurant O
 est O
 bien O
 décoré O
 #PUNCT# O
 
-Nous O
+nous O
 avons O
 beaucoup O
 fréquenté O
 ce O
 petit O
-restaurant B-positive
+restaurant O
 #PUNCT# O
 mais O
 là O
@@ -630,7 +630,7 @@ beaucoup O
 baissé O
 #PUNCT# O
 
-Je O
+je O
 retournerais O
 avec O
 un O
@@ -638,16 +638,16 @@ grand O
 plaisir O
 dans O
 ce O
-restaurant B-negative
+restaurant O
 #PUNCT# O
 
-Je O
+je O
 vous O
 le O
 déconseille O
 #PUNCT# O
 
-Nous O
+nous O
 avons O
 fait O
 la O
@@ -662,7 +662,7 @@ au O
 cuisinier O
 #PUNCT# O
 
-Vraiment O
+vraiment O
 une O
 adresse B-positive
 à O
@@ -671,10 +671,10 @@ pour O
 les O
 amateurs O
 de O
-viande O
+viande B-negative
 #PUNCT# O
 une O
-entrecôte O
+entrecôte B-negative
 qui O
 fond O
 dans O
@@ -682,21 +682,21 @@ la O
 bouche O
 #PUNCT# O
 une O
-sauce B-positive
+sauce B-negative
 simple O
 mais O
 goûteuses O
 et O
 un O
-verre O
-de O
-vin O
-de O
+verre B-negative
+de I-negative
+vin I-negative
+de I-negative
 bonne O
 qualité O
 #PUNCT# O
 
-Après O
+après O
 minuit O
 les O
 habitués O
@@ -709,7 +709,7 @@ au O
 bar O
 #PUNCT# O
 
-Même O
+même O
 si O
 #PUNCT# O
 l O
@@ -727,7 +727,7 @@ du O
 monopole O
 #PUNCT# O
 
-Pour O
+pour O
 la O
 plupart O
 d'entre O
@@ -737,14 +737,14 @@ nous O
 avons O
 trouvé O
 notre O
-QG O
+qg O
 du O
 quai O
 de O
 seine O
 #PUNCT# O
 
-Ces O
+ces O
 pauvres O
 poulpes O
 auraient O
@@ -763,7 +763,7 @@ la O
 plancha O
 #PUNCT# O
 
-La O
+la O
 musique B-negative
 était O
 vraiment O
@@ -773,14 +773,14 @@ forte O
 
 seul O
 le O
-vin B-negative
+vin O
 était O
 correct O
 en O
 rapport O
-Q O
+q O
 #PUNCT# O
-P O
+p O
 #PUNCT# O
 les O
 entrées O
@@ -793,7 +793,7 @@ quant O
 eux O
 #PUNCT# O
 
-Je O
+je O
 ne O
 recommanderai O
 pas O
@@ -805,19 +805,19 @@ retournerai O
 pas O
 #PUNCT# O
 
-En O
+en O
 bref O
 #PUNCT# O
 la O
 qualité O
 du O
-service B-negative
+service B-positive
 est O
 un O
 comble O
 pour O
 un O
-établissement O
+établissement B-positive
 mettant O
 en O
 avant O
@@ -826,8 +826,8 @@ influences O
 new-yorkaise O
 #PUNCT# O
 
-Un O
-pain B-negative
+un O
+pain O
 qui O
 sut O
 de O
@@ -837,9 +837,9 @@ micro O
 onde O
 #PUNCT# O
 
-L O
+l O
 #PUNCT# O
-apéro B-positive
+apéro O
 est O
 étonnant O
 #PUNCT# O
@@ -862,7 +862,7 @@ canne O
 liquide O
 #PUNCT# O
 
-Un O
+un O
 cadre B-positive
 simple O
 mais O
@@ -884,7 +884,7 @@ et O
 goût O
 #PUNCT# O
 
-Une O
+une O
 bière B-negative
 pression O
 à O
@@ -905,16 +905,16 @@ coupée O
 l'eau O
 #PUNCT# O
 
-Ce O
+ce O
 sera O
 notre O
 incontournable O
 à O
-Cassis O
+cassis O
 #PUNCT# O
 
 un O
-resto B-negative
+resto O
 qui O
 ravira O
 les O
@@ -927,7 +927,7 @@ bien O
 cuisinés O
 #PUNCT# O
 
-Une O
+une O
 adresse B-positive
 à O
 garder O
@@ -964,7 +964,7 @@ avec O
 le O
 sourire O
 
-Tout O
+tout O
 d'abord O
 un O
 serveur B-negative
@@ -977,7 +977,7 @@ lorsque O
 nous O
 lisions O
 la O
-carte B-negative
+carte B-positive
 #PUNCT# O
 malgré O
 cette O
@@ -988,7 +988,7 @@ le O
 contenu O
 de O
 la O
-carte B-negative
+carte B-positive
 avait O
 l'air O
 pas O
@@ -1019,7 +1019,7 @@ longue O
 heureusement O
 l'égarement O
 d'une O
-serveuse O
+serveuse B-negative
 avec O
 ses O
 assiettes O
@@ -1039,21 +1039,21 @@ la O
 peine O
 #PUNCT# O
 
-Les O
+les O
 produits B-positive
 sont O
 de O
 saison O
 #PUNCT# O
 
-Service B-positive
+service B-negative
 gentil O
 #PUNCT# O
 
-Ah O
+ah O
 #PUNCT# O
 
-Des O
+des O
 produits B-positive
 #PUNCT# O
 frais O
@@ -1065,7 +1065,7 @@ très O
 bons O
 #PUNCT# O
 
-Le O
+le O
 soir O
 pas O
 de O
@@ -1091,7 +1091,7 @@ sens O
 #PUNCT# O
 #PUNCT# O
 
-Nous O
+nous O
 n'y O
 mettrons O
 plus O
@@ -1099,7 +1099,7 @@ les O
 pieds O
 #PUNCT# O
 
-A O
+a O
 recommander O
 #DIGIT# O
 fois O
@@ -1107,11 +1107,11 @@ fois O
 
 #DIGIT# O
 ticket O
-Resto O
+resto O
 par O
 personne O
 
-Au O
+au O
 départ O
 nous O
 avions O
@@ -1141,7 +1141,7 @@ serveurs B-negative
 fatigués O
 #PUNCT# O
 
-Je O
+je O
 suis O
 allé O
 à O
@@ -1156,19 +1156,19 @@ parisiennes O
 dîner O
 dans O
 cet O
-établissement B-negative
+établissement B-positive
 bien O
 situé O
 #PUNCT# O
 
-Les O
+les O
 prix O
 pratiqués O
 sont O
 corrects O
 #PUNCT# O
 
-Que O
+que O
 le O
 chef O
 cherche O
@@ -1187,7 +1187,7 @@ avec O
 talent O
 #PUNCT# O
 
-Digestion O
+digestion O
 compliqué O
 le O
 lendemain O
@@ -1201,12 +1201,12 @@ même O
 
 #PUNCT# O
 
-Un O
+un O
 grand O
 remerciement O
 pour O
 cette O
-cuisine B-negative
+cuisine B-positive
 riche O
 moderne O
 et O
@@ -1221,7 +1221,7 @@ l O
 #PUNCT# O
 accueil B-positive
 au O
-service B-negative
+service B-positive
 #PUNCT# O
 la O
 gentillesse O
@@ -1229,20 +1229,20 @@ et O
 le O
 professionnalisme O
 du O
-personnel O
+personnel B-positive
 merci O
 et O
 merci O
 encore O
 
-Si O
+si O
 le O
-plat B-negative
+plat O
 fut O
 correct O
 #PUNCT# O
-saint O
-jacques O
+saint B-negative
+jacques I-negative
 #PUNCT# O
 risotto O
 #PUNCT# O
@@ -1257,8 +1257,8 @@ faim O
 #PUNCT# O
 seulement O
 trois O
-saint O
-jacques O
+saint B-negative
+jacques I-negative
 le O
 tout O
 à O
@@ -1266,7 +1266,7 @@ peine O
 chaud O
 #PUNCT# O
 
-On O
+on O
 a O
 même O
 vu O
@@ -1277,21 +1277,21 @@ en O
 cuise O
 #PUNCT# O
 
-Bien O
+bien O
 situé O
 #PUNCT# O
 
-repas B-negative
+repas O
 et O
 un O
-vin B-positive
+vin O
 irréprochable O
 #PUNCT# O
 service B-positive
 impeccable O
 #PUNCT# O
 
-On O
+on O
 attire O
 les O
 clients O
@@ -1309,7 +1309,7 @@ le O
 restaurant O
 #PUNCT# O
 
-Certes O
+certes O
 nous O
 n'avions O
 pas O
@@ -1346,16 +1346,16 @@ et O
 sympa O
 #PUNCT# O
 
-Une O
+une O
 équipe B-positive
 aimable O
 #PUNCT# O
 de O
 la O
 vraie O
-nourriture B-negative
-traditionnelle O
-française O
+nourriture B-positive
+traditionnelle I-positive
+française I-positive
 #PUNCT# O
 fraîcheur O
 des O
@@ -1372,12 +1372,12 @@ tester O
 #PUNCT# O
 dans O
 les O
-recettes O
+recettes B-positive
 #PUNCT# O
 de O
 bon O
 petits O
-vins I-negative
+vins B-positive
 #PUNCT# O
 franchement O
 #PUNCT# O
@@ -1396,7 +1396,7 @@ toujours O
 ravie O
 #PUNCT# O
 
-Rien O
+rien O
 à O
 dire O
 #PUNCT# O
@@ -1409,7 +1409,7 @@ très O
 frais O
 #PUNCT# O
 
-Nous O
+nous O
 avons O
 testé O
 de O
@@ -1421,7 +1421,7 @@ toujours O
 excellents O
 #PUNCT# O
 
-Pas O
+pas O
 un O
 merci O
 #PUNCT# O
@@ -1429,7 +1429,7 @@ quelle O
 tristesse O
 #PUNCT# O
 
-Très O
+très O
 belle O
 ambiance B-positive
 si O
@@ -1447,7 +1447,7 @@ bobo O
 hipster O
 #PUNCT# O
 
-L'apéro O
+l'apéro O
 à O
 été O
 un O
@@ -1461,7 +1461,7 @@ pressé O
 de O
 finir O
 son O
-service B-negative
+service B-positive
 et O
 qui O
 est O
@@ -1471,7 +1471,7 @@ proposer O
 de O
 goûter O
 le O
-vin B-negative
+vin O
 alors O
 que O
 nous O
@@ -1485,7 +1485,7 @@ de O
 tapenade O
 #PUNCT# O
 
-Les O
+les O
 desserts O
 maisons O
 apparemment O
@@ -1506,7 +1506,7 @@ bonne O
 soirée O
 #PUNCT# O
 
-Moi O
+moi O
 qui O
 n'écris O
 jamais O
@@ -1529,12 +1529,12 @@ ma O
 part O
 #PUNCT# O
 
-Tout O
+tout O
 est O
 dit O
 #PUNCT# O
 
-Goût O
+goût O
 affreux O
 #PUNCT# O
 surtout O
@@ -1553,16 +1553,16 @@ casserole O
 de O
 puré O
 de O
-pommes O
-de O
-terre O
+pommes B-negative
+de I-negative
+terre I-negative
 comme O
 une O
 soupe B-positive
 amère O
 #PUNCT# O
 
-Nous O
+nous O
 avons O
 été O
 attirés O
@@ -1573,7 +1573,7 @@ plutôt O
 corrects O
 #PUNCT# O
 
-Nous O
+nous O
 avons O
 pris O
 une O
@@ -1583,7 +1583,7 @@ pour O
 deux O
 #PUNCT# O
 
-Pour O
+pour O
 rencontrer O
 des O
 gens O
@@ -1592,34 +1592,34 @@ plus O
 sympas O
 #PUNCT# O
 
-Accueil B-positive
+accueil B-positive
 très O
 sympathique O
 #PUNCT# O
 
-Des O
+des O
 serveurs B-negative
-antipathiques O
-au O
+antipathiques I-negative
+au I-negative
 possible O
 #PUNCT# O
 
-Un O
-tartare B-positive
-de O
-saumon O
+un O
+tartare B-neutral
+de I-neutral
+saumon I-neutral
 avec O
 trop O
 d'oignons O
 #PUNCT# O
 
-Vous O
+vous O
 regretterez O
 moins O
 l'addition O
 #PUNCT# O
 
-Il O
+il O
 revient O
 après O
 vérification O
@@ -1633,17 +1633,17 @@ la O
 recette O
 des O
 moules B-negative
-marinières O
+marinières I-negative
 #PUNCT# O
 
-Accueil B-positive
+accueil B-positive
 très O
 très O
 sympa O
 #PUNCT# O
 #PUNCT# O
 #PUNCT# O
-Nous O
+nous O
 avons O
 très O
 bien O
@@ -1670,9 +1670,9 @@ rdv O
 #PUNCT# O
 #PUNCT# O
 
-Pas O
+pas O
 de O
-responsable O
+responsable B-negative
 dans O
 le O
 restaurant O
@@ -1683,7 +1683,7 @@ nos O
 demandes O
 #PUNCT# O
 
-Pour O
+pour O
 avoir O
 été O
 testé O
@@ -1723,10 +1723,10 @@ nous O
 venions O
 dans O
 ce O
-restaurant B-negative
+restaurant O
 #PUNCT# O
 
-Le O
+le O
 cadre B-positive
 et O
 le O
@@ -1735,20 +1735,20 @@ sont O
 agréables O
 #PUNCT# O
 
-Très O
+très O
 agréable O
 #PUNCT# O
 
-La O
+la O
 note O
 qui O
 nous O
 est O
 présentée O
 est O
-défalquée O
-d'une O
-cocotte O
+défalquée B-negative
+d'une I-negative
+cocotte I-negative
 alors O
 que O
 plus O
@@ -1757,11 +1757,11 @@ ne O
 souhaite O
 manger O
 ces O
-moules O
+moules B-negative
 douteuses O
 #PUNCT# O
 
-Service B-positive
+service B-negative
 superbe O
 et O
 très O
@@ -1780,16 +1780,16 @@ les O
 noms O
 originaux O
 des O
-plats B-negative
+plats O
 sont O
 incompréhensible O
 #PUNCT# O
 
-Mais O
+mais O
 dans O
 l'assiette O
 aucune O
-cuisine O
+cuisine B-positive
 #PUNCT# O
 du O
 réchauffé O
@@ -1802,13 +1802,13 @@ d'entreprise O
 
 j'ai O
 pris O
-bavette O
+bavette B-negative
 avec O
 des O
-frites B-negative
+frites O
 #PUNCT# O
 
-A O
+a O
 deux O
 19h O
 #PUNCT# O
@@ -1821,7 +1821,7 @@ en O
 dîner O
 #PUNCT# O
 
-L O
+l O
 #PUNCT# O
 entrée O
 pas O
@@ -1829,14 +1829,14 @@ bonne O
 #PUNCT# O
 plus O
 de O
-plat O
-du O
-jour O
+plat B-neutral
+du I-neutral
+jour I-neutral
 #PUNCT# O
 
-Arrivages O
+arrivages O
 de O
-poissons O
+poissons B-positive
 journalier O
 #PUNCT# O
 donc O
@@ -1844,7 +1844,7 @@ extra O
 frais O
 #PUNCT# O
 
-Quel O
+quel O
 plaisir O
 dés O
 l O
@@ -1874,10 +1874,10 @@ amical O
 #PUNCT# O
 surtout O
 à O
-Paris O
+paris O
 #PUNCT# O
 
-Encore O
+encore O
 une O
 fois O
 ce O
@@ -1893,7 +1893,7 @@ parisienne O
 qui O
 achète O
 ses O
-produits B-negative
+produits B-positive
 de O
 basse O
 qualité O
@@ -1910,7 +1910,7 @@ un O
 blinde O
 #PUNCT# O
 
-Hésitant O
+hésitant O
 au O
 départ O
 sur O
@@ -1921,9 +1921,9 @@ lieu B-positive
 #PUNCT# O
 un O
 bon O
-verre O
-de O
-vin O
+verre B-negative
+de I-negative
+vin I-negative
 #PUNCT# O
 des O
 bons O
@@ -1945,14 +1945,14 @@ nos O
 amis O
 #PUNCT# O
 
-C'est O
+c'est O
 la O
 fin O
 de O
-service B-negative
+service B-positive
 #PUNCT# O
 
-Salle O
+salle O
 déserte O
 #PUNCT# O
 nous O
@@ -1966,7 +1966,7 @@ samedi O
 soir O
 #PUNCT# O
 
-Pas O
+pas O
 mal O
 #PUNCT# O
 mais O
@@ -1974,7 +1974,7 @@ sans O
 plus O
 #PUNCT# O
 
-Ça O
+ça O
 ne O
 vaut O
 certes O
@@ -1983,7 +1983,7 @@ le O
 prix O
 #PUNCT# O
 
-Je O
+je O
 demande O
 au O
 serveur B-negative
@@ -1995,7 +1995,7 @@ un O
 souci O
 #PUNCT# O
 
-Le O
+le O
 cadre B-positive
 #PUNCT# O
 dîner O
@@ -2006,8 +2006,8 @@ la O
 piscine O
 #PUNCT# O
 
-Un O
-serveur B-positive
+un O
+serveur B-negative
 sympathique O
 mais O
 c'est O
@@ -2031,7 +2031,7 @@ situé O
 dans O
 la O
 petite O
-Venise O
+venise O
 avec O
 terrasse B-positive
 au O
@@ -2049,13 +2049,13 @@ cette O
 journée O
 passée O
 à O
-Colmar O
+colmar O
 #PUNCT# O
 
-Excellent O
-dîner B-positive
+excellent O
+dîner O
 #PUNCT# O
-serveuse B-positive
+serveuse B-negative
 très O
 aimable O
 #PUNCT# O
@@ -2063,7 +2063,7 @@ et O
 ambiance B-positive
 tamisée O
 #PUNCT# O
-Nous O
+nous O
 avons O
 testé O
 plusieurs O
@@ -2071,19 +2071,19 @@ entrées O
 et O
 plats O
 #PUNCT# O
-Personne O
+personne O
 n O
 a O
 été O
 déçu O
 #PUNCT# O
 
-Très O
+très O
 beau O
-menu B-positive
-à O
-#DIGIT# O
-euros O
+menu B-neutral
+à I-neutral
+#DIGIT# I-neutral
+euros I-neutral
 le O
 midi O
 qui O
@@ -2093,12 +2093,12 @@ le O
 temps O
 #PUNCT# O
 
-Le O
+le O
 service B-positive
 est O
 très O
 correct O
-Nous O
+nous O
 avons O
 passé O
 un O
@@ -2114,8 +2114,8 @@ l O
 endroit B-positive
 #PUNCT# O
 
-Le O
-courant B-positive
+le O
+courant O
 est O
 très O
 bien O
@@ -2143,26 +2143,26 @@ la O
 ligne O
 #PUNCT# O
 
-Cela O
+cela O
 reste O
 quand O
 même O
 un O
 bon O
-resto B-positive
+resto O
 #PUNCT# O
 a O
 tester O
 #PUNCT# O
 
-Personnel B-positive
+personnel B-positive
 très O
 gentil O
 et O
 serviable O
 #PUNCT# O
 
-Première O
+première O
 table O
 où O
 l'on O
@@ -2190,18 +2190,18 @@ de O
 poussière O
 #PUNCT# O
 
-Un O
+un O
 peu O
 vieillissant O
 #PUNCT# O
 
-Sans O
+sans O
 parler O
 de O
 l'huile O
 #PUNCT# O
 
-Entrée O
+entrée O
 #PUNCT# O
 plat O
 #PUNCT# O
@@ -2220,8 +2220,8 @@ gâchis O
 #PUNCT# O
 #PUNCT# O
 
-Les O
-plats B-positive
+les O
+plats O
 sont O
 excellents O
 de O
@@ -2230,7 +2230,7 @@ au O
 dessert O
 #PUNCT# O
 
-Pas O
+pas O
 besoin O
 d'en O
 dire O
@@ -2241,7 +2241,7 @@ bar O
 est O
 affreux O
 
-Une O
+une O
 belle O
 carte B-positive
 pleine O
@@ -2250,7 +2250,7 @@ bonnes O
 surprises O
 #PUNCT# O
 
-Serveurs B-negative
+serveurs B-negative
 désagréables O
 #PUNCT# O
 vous O
@@ -2260,7 +2260,7 @@ du O
 coin O
 #PUNCT# O
 
-Nous O
+nous O
 laissons O
 une O
 seconde O
@@ -2283,7 +2283,7 @@ proposé O
 #PUNCT# O
 #PUNCT# O
 
-La O
+la O
 déco B-positive
 est O
 bas O
@@ -2293,7 +2293,7 @@ et O
 clinquante O
 #PUNCT# O
 
-Lorsque O
+lorsque O
 le O
 serveur B-negative
 nous O
@@ -2322,7 +2322,7 @@ j'avais O
 demandé O
 #PUNCT# O
 
-Si O
+si O
 vous O
 avez O
 la O
@@ -2333,22 +2333,22 @@ votre O
 chemin O
 #PUNCT# O
 
-Entrée O
+entrée B-negative
 au I-negative
 chèvre I-negative
 chaud I-negative
 #PUNCT# O
 suivi O
 d'un O
-magret O
-de O
-canard O
-miel O
+magret B-positive
+de I-positive
+canard I-positive
+miel I-positive
 #PUNCT# O
 citron O
 accompagné O
 de O
-pommes O
+pommes B-negative
 sautées O
 #PUNCT# O
 un O
@@ -2356,7 +2356,7 @@ vrai O
 délice O
 #PUNCT# O
 
-La O
+la O
 carte B-positive
 pourtant O
 est O
@@ -2366,7 +2366,7 @@ et O
 alléchante O
 #PUNCT# O
 
-Service B-positive
+service B-negative
 très O
 perfectible O
 #PUNCT# O
@@ -2378,7 +2378,7 @@ organisé O
 #PUNCT# O
 #PUNCT# O
 
-Il O
+il O
 prend O
 la O
 commande O
@@ -2398,8 +2398,8 @@ autres O
 serveurs B-negative
 #PUNCT# O
 
-Les O
-plats B-positive
+les O
+plats O
 sont O
 servis O
 en O
@@ -2410,7 +2410,7 @@ bien O
 chauds O
 #PUNCT# O
 
-Des O
+des O
 produits B-positive
 frais O
 avec O
@@ -2428,18 +2428,18 @@ petit O
 soin O
 #PUNCT# O
 
-Après O
+après O
 ça O
 mais O
 une O
 certaine O
-ambiance O
+ambiance B-positive
 dans O
 la O
 salle O
 #PUNCT# O
 
-La O
+la O
 cuisine B-positive
 était O
 correcte O
@@ -2449,8 +2449,8 @@ ambiance B-positive
 sympa O
 #PUNCT# O
 
-Le O
-patron B-positive
+le O
+patron O
 est O
 vraiment O
 super O
@@ -2462,21 +2462,21 @@ eu O
 droit O
 à O
 une O
-pizza O
+pizza B-negative
 gratuite O
 sans O
 rien O
 demander O
 #PUNCT# O
 
-Burger B-negative
+burger B-negative
 hyper O
 sec O
 #PUNCT# O
 mal O
 cuit O
 #PUNCT# O
-frites B-negative
+frites O
 sans O
 goût O
 à O
@@ -2488,7 +2488,7 @@ l'huile O
 bière B-negative
 chaude O
 #PUNCT# O
-service B-negative
+service B-positive
 assez O
 sympathique O
 et O
@@ -2507,7 +2507,7 @@ cette O
 soirée O
 #PUNCT# O
 
-Côté O
+côté O
 cuisine B-positive
 #PUNCT# O
 un O
@@ -2522,7 +2522,7 @@ ou O
 d'audace O
 #PUNCT# O
 
-Une O
+une O
 agression O
 inutile O
 qui O
@@ -2533,18 +2533,18 @@ la O
 soirée O
 #PUNCT# O
 
-Choix O
+choix O
 du O
-buffet B-negative
+buffet O
 très O
 restreint O
 #PUNCT# O
 
-Nous O
+nous O
 avons O
 demandé O
 du O
-Coca-Cola O
+coca-cola O
 et O
 on O
 nous O
@@ -2567,7 +2567,7 @@ il O
 chaud O
 #PUNCT# O
 
-On O
+on O
 aurait O
 du O
 se O
@@ -2581,7 +2581,7 @@ vendredi O
 soir O
 #PUNCT# O
 
-Ce O
+ce O
 n'est O
 pas O
 à O
@@ -2589,7 +2589,7 @@ tomber O
 par O
 terre O
 
-En O
+en O
 entrée O
 #PUNCT# O
 nous O
@@ -2606,12 +2606,12 @@ et O
 une O
 sorte O
 de O
-canard O
+canard B-negative
 confis O
 en O
 gelée O
 avec O
-noix O
+noix B-positive
 et O
 poires O
 #PUNCT# O
@@ -2620,7 +2620,7 @@ bon O
 #PUNCT# O
 #PUNCT# O
 
-Dans O
+dans O
 ce O
 quartier O
 tranquille O
@@ -2645,14 +2645,14 @@ de O
 saison O
 #PUNCT# O
 
-Bref O
+bref O
 une O
 addition O
 très O
 salée O
 pour O
 un O
-repas B-negative
+repas O
 très O
 long O
 et O
@@ -2661,8 +2661,8 @@ sans O
 plaisir O
 #PUNCT# O
 
-Les O
-serveurs B-positive
+les O
+serveurs B-negative
 sont O
 très O
 souriants O
@@ -2670,35 +2670,35 @@ et O
 patients O
 #PUNCT# O
 
-La O
+la O
 carte B-positive
 est O
 généreuse O
 #PUNCT# O
 
-Plats B-negative
+plats B-negative
 bien O
 exécutés O
 #PUNCT# O
 les O
-sauces B-neutral
+sauces B-negative
 sont O
 également O
 bonnes O
 
 des O
-plats B-negative
+plats O
 sans O
 passion O
 #PUNCT# O
 vaisselle O
 cassée O
 #PUNCT# O
-plat O
-du O
-jour O
+plat B-neutral
+du I-neutral
+jour I-neutral
 #PUNCT# O
-riz O
+riz B-negative
 crustacés O
 en O
 gros O
@@ -2707,7 +2707,7 @@ très O
 sec O
 #PUNCT# O
 sans O
-sauce O
+sauce B-negative
 #PUNCT# O
 gambas O
 pas O
@@ -2715,7 +2715,7 @@ fraîches O
 #PUNCT# O
 une O
 pauvre O
-décoration O
+décoration B-positive
 superflue O
 #PUNCT# O
 bref O
@@ -2723,18 +2723,18 @@ aucun O
 goût O
 #PUNCT# O
 
-La O
+la O
 sauce B-negative
 envahissait O
 le O
-poisson B-negative
+poisson O
 #PUNCT# O
 
 1ère O
 fois O
 que O
 le O
-service B-negative
+service B-positive
 n'est O
 pas O
 à O
@@ -2750,12 +2750,12 @@ que O
 je O
 fréquente O
 à O
-Rennes O
+rennes O
 #PUNCT# O
 dommage O
 #PUNCT# O
 
-Un O
+un O
 lieu B-positive
 simple O
 ou O
@@ -2765,15 +2765,15 @@ agréable O
 soirée O
 #PUNCT# O
 
-Attente B-negative
+attente B-negative
 interminable O
 #PUNCT# O
 
-Service B-positive
+service B-negative
 aimable O
 #PUNCT# O
 
-Choix O
+choix O
 de O
 plats O
 très O
@@ -2782,22 +2782,22 @@ classique O
 et O
 qualité O
 des O
-plats B-negative
+plats O
 médiocre O
 #PUNCT# O
 
-Bons O
+bons O
 cocktails B-positive
 et O
-barman B-positive
+barman O
 très O
 sympa O
 #PUNCT# O
 
-Pour O
+pour O
 finir O
 le O
-fraisier B-negative
+fraisier O
 #PUNCT# O
 plutot O
 une O
@@ -2821,10 +2821,10 @@ un O
 cheveu O
 sur O
 la O
-soupe O
+soupe B-positive
 #PUNCT# O
 
-La O
+la O
 cuisine B-positive
 est O
 excellente O
@@ -2840,7 +2840,7 @@ sent O
 bien O
 #PUNCT# O
 
-Un O
+un O
 restaurant O
 extrêmement O
 bien O
@@ -2849,11 +2849,11 @@ tout O
 en O
 haut O
 des O
-Champs O
-Elysée O
+champs O
+elysée O
 #PUNCT# O
 
-Comment O
+comment O
 peut-on O
 dire O
 cuisine B-positive
@@ -2865,25 +2865,25 @@ en O
 boite O
 #PUNCT# O
 son O
-boeuf O
-bourguignon O
+boeuf B-negative
+bourguignon I-negative
 rempli O
 de O
 bas O
 morceaux O
 #PUNCT# O
 ces O
-escargots O
+escargots B-positive
 decongeles O
 etc O
 #PUNCT# O
-cuisine O
-française O
+cuisine B-positive
+française I-positive
 vraiment O
 #PUNCT# O
 
-Le O
-saumon B-negative
+le O
+saumon O
 n'était O
 pas O
 très O
@@ -2901,7 +2901,7 @@ votre O
 chemin O
 #PUNCT# O
 
-A O
+a O
 tester O
 absolument O
 et O
@@ -2913,8 +2913,8 @@ très O
 faim O
 #PUNCT# O
 
-Les O
-entrées B-positive
+les O
+entrées O
 sont O
 à O
 #DIGIT# O
@@ -2923,7 +2923,7 @@ et O
 copieuses O
 #PUNCT# O
 
-La O
+la O
 cuisine B-positive
 qui O
 mériterait O
@@ -2931,10 +2931,10 @@ largement O
 une O
 étoile O
 au O
-Michelin O
+michelin O
 #PUNCT# O
 
-J'ai O
+j'ai O
 tendance O
 à O
 avoir O
@@ -2954,7 +2954,7 @@ avons O
 satisfait O
 #PUNCT# O
 
-Accueil B-positive
+accueil B-positive
 et O
 service B-positive
 sont O
@@ -2962,13 +2962,13 @@ agréables O
 et O
 efficaces O
 
-Finalement O
+finalement O
 nous O
 avons O
 gagné O
 #PUNCT# O
 
-Un O
+un O
 bon O
 rapport O
 qualité O
@@ -2976,15 +2976,15 @@ qualité O
 prix O
 #PUNCT# O
 
-Je O
+je O
 ne O
 conseillerais O
 pas O
 cet O
-établissement B-negative
+établissement B-positive
 #PUNCT# O
 
-Ca O
+ca O
 a O
 beaucoup O
 changé O
@@ -2997,13 +2997,13 @@ les O
 pieds O
 #PUNCT# O
 
-La O
-salle B-positive
+la O
+salle O
 est O
 bien O
 mais O
 les O
-WC O
+wc O
 ne O
 sont O
 pas O
@@ -3012,17 +3012,17 @@ la O
 hauteur O
 #PUNCT# O
 
-Café O
-gourmand O
+café B-positive
+gourmand I-positive
 #PUNCT# O
 café O
 et O
 une O
 part O
 de O
-tarte B-negative
+tarte B-positive
 aux I-positive
-pommes B-negative
+pommes O
 surgelée O
 #PUNCT# O
 écrit O
@@ -3030,19 +3030,19 @@ fait O
 maison O
 sur O
 la O
-carte B-negative
+carte B-positive
 #PUNCT# O
 
-Bon O
+bon O
 accueil B-positive
 mais O
-service B-negative
+service B-positive
 un O
 peu O
 long O
 #PUNCT# O
 
-Assis O
+assis O
 sur O
 des O
 chaises O
@@ -3079,7 +3079,7 @@ quantité O
 différente O
 #PUNCT# O
 
-Certes O
+certes O
 #PUNCT# O
 ce O
 n'est O
@@ -3102,15 +3102,15 @@ pour O
 cela O
 #PUNCT# O
 
-Des O
-plats B-negative
+des O
+plats O
 correctement O
 servis O
 #PUNCT# O
 un O
-pavé O
+pavé B-negative
 de O
-turbot O
+turbot B-positive
 excellent O
 et O
 des O
@@ -3121,10 +3121,10 @@ le O
 quartier O
 #PUNCT# O
 
-Service B-positive
+service B-negative
 lamentable O
 #PUNCT# O
-viandes O
+viandes B-negative
 médiocres O
 et O
 note O
@@ -3132,7 +3132,7 @@ très O
 salée O
 #PUNCT# O
 
-Un O
+un O
 début O
 de O
 soirée O
@@ -3148,8 +3148,8 @@ les O
 1er O
 fois O
 une O
-Virgin O
-Colada O
+virgin O
+colada O
 à O
 6.50 O
 e O
@@ -3165,26 +3165,26 @@ toujours O
 très O
 chaleureux O
 du O
-patron O
-et O
-de O
-sa O
-femme O
+patron B-negative
+et I-negative
+de I-negative
+sa I-negative
+femme I-negative
 #PUNCT# O
 
-Superbe O
+superbe O
 accueil B-positive
 #PUNCT# O
 
-Oui O
+oui O
 c'est O
 frais O
 #PUNCT# O
 
-Connaissant O
+connaissant O
 bien O
 la O
-cuisine B-negative
+cuisine B-positive
 de O
 son O
 mari O
@@ -3197,12 +3197,12 @@ de O
 la O
 qualité O
 du O
-plat O
-du O
-jour O
+plat B-neutral
+du I-neutral
+jour I-neutral
 #PUNCT# O
 
-Mais O
+mais O
 étant O
 donné O
 que O
@@ -3254,7 +3254,7 @@ commander O
 dans O
 un O
 espace O
-Iounge O
+iounge O
 à O
 peine O
 éclairé O
@@ -3276,7 +3276,7 @@ smartphone O
 #PUNCT# O
 #PUNCT# O
 
-Attirés O
+attirés O
 par O
 la O
 devanture O
@@ -3297,7 +3297,7 @@ menu O
 n'inspirait O
 pas O
 une O
-cuisine B-negative
+cuisine B-positive
 raffinée O
 #PUNCT# O
 mais O
@@ -3308,9 +3308,9 @@ que O
 tout O
 #PUNCT# O
 
-Un O
+un O
 excellent O
-repas B-positive
+repas O
 mélangeant O
 saveur O
 américaines O
@@ -3324,7 +3324,7 @@ jusqu'au O
 dessert O
 #PUNCT# O
 
-Quand O
+quand O
 les O
 institutions O
 marseillaises O
@@ -3346,7 +3346,7 @@ touristes O
 #PUNCT# O
 
 #PUNCT# O
-Des O
+des O
 serveuses B-negative
 #PUNCT# O
 serveurs B-negative
@@ -3359,7 +3359,7 @@ en O
 tout O
 début O
 de O
-service B-negative
+service B-positive
 lorsque O
 l'endroit O
 est O
@@ -3370,7 +3370,7 @@ d'une O
 impolitesse O
 rare O
 
-On O
+on O
 reste O
 sur O
 sa O
@@ -3387,7 +3387,7 @@ de O
 rab O
 #PUNCT# O
 
-J'y O
+j'y O
 retournerai O
 certainement O
 pour O
@@ -3423,15 +3423,15 @@ sur O
 l'addition O
 #PUNCT# O
 
-Sommes O
+sommes O
 venus O
 avec O
 un O
 coupon O
-Groupon O
+groupon O
 #PUNCT# O
 
-A O
+a O
 faire O
 si O
 on O
@@ -3458,10 +3458,10 @@ ce O
 qui O
 manque O
 à O
-Paris O
+paris O
 #PUNCT# O
 
-Sans O
+sans O
 parler O
 de O
 la O
@@ -3471,31 +3471,31 @@ simplement O
 délicieuse O
 #PUNCT# O
 
-Je O
+je O
 connais O
 l'adresse O
 depuis O
 longtemps O
 
-Le O
+le O
 cadre B-positive
 est O
 somptueux O
 #PUNCT# O
 le O
-repas B-positive
+repas O
 est O
 très O
 correct O
 #PUNCT# O
 
-Les O
+les O
 moins O
 #PUNCT# O
 
-Pour O
+pour O
 deux O
-entrées B-negative
+entrées O
 #PUNCT# O
 deux O
 plats O
@@ -3504,28 +3504,28 @@ deux O
 desserts O
 à O
 la O
-carte O
+carte B-positive
 avec O
 une O
-bouteille O
-de O
-vin O
+bouteille B-negative
+de I-negative
+vin I-negative
 nous O
 avons O
 trouvé O
 le O
-repas B-negative
+repas O
 assez O
 cher O
 pour O
-Castelnaudary O
+castelnaudary O
 #PUNCT# O
 #DIGIT# O
 € O
 #PUNCT# O
 #PUNCT# O
 
-L O
+l O
 ’ O
 accueil B-positive
 laisse O
@@ -3544,14 +3544,14 @@ se O
 passe O
 #PUNCT# O
 
-Nous O
+nous O
 avions O
 négocié O
 le O
 menu O
 avec O
 le O
-responsable O
+responsable B-negative
 et O
 nous O
 étions O
@@ -3583,7 +3583,7 @@ complètement O
 satisfait O
 #PUNCT# O
 
-Une O
+une O
 cuisine B-positive
 savoureuse O
 faite O
@@ -3603,12 +3603,12 @@ un O
 vrai O
 restaurant O
 
-La O
+la O
 nourriture B-negative
 est O
 moyenne O
 
-Le O
+le O
 service B-positive
 est O
 correct O
@@ -3618,16 +3618,16 @@ sans O
 entrain O
 #PUNCT# O
 
-Un O
+un O
 rapport O
 qualité O
 prix O
 correct O
 #PUNCT# O
 
-REFUS O
-DU O
-PASSTIME O
+refus O
+du O
+passtime O
 alors O
 qu'ils O
 sont O
@@ -3642,15 +3642,15 @@ en O
 arrivant O
 #PUNCT# O
 
-Une O
+une O
 vraie O
 déception O
 #PUNCT# O
 
-Le O
+le O
 contenu O
 des O
-assiettes B-positive
+assiettes O
 est O
 tout O
 aussi O
@@ -3666,12 +3666,12 @@ aux O
 desserts O
 #PUNCT# O
 
-Mais O
+mais O
 après O
 #PUNCT# O
 
-Les O
-plats B-positive
+les O
+plats O
 sont O
 classiques O
 mais O
@@ -3681,7 +3681,7 @@ un O
 prix O
 qui O
 l'est O
-aussi.Vient O
+aussi.vient O
 ensuite O
 l O
 #PUNCT# O
@@ -3700,7 +3700,7 @@ ses O
 endroits O
 #PUNCT# O
 
-Le O
+le O
 moelleux O
 speculos O
 #PUNCT# O
@@ -3713,15 +3713,15 @@ pas O
 terre O
 #PUNCT# O
 
-Très O
+très O
 déçue O
 par O
 ce O
-restaurant B-negative
+restaurant O
 
-Manifestement O
+manifestement O
 ce O
-restaurant B-positive
+restaurant O
 a O
 préféré O
 tout O
@@ -3729,14 +3729,14 @@ miser O
 sur O
 le O
 cadre B-positive
-au O
-détriment O
-de O
+au I-positive
+détriment I-positive
+de I-positive
 la O
 cuisine B-positive
 #PUNCT# O
 
-Carafe O
+carafe O
 d'eau O
 demandé O
 deux O
@@ -3746,7 +3746,7 @@ de O
 l'avoir O
 #PUNCT# O
 
-Je O
+je O
 le O
 recommande O
 à O
@@ -3755,16 +3755,16 @@ le O
 monde O
 #PUNCT# O
 
-On O
+on O
 pourrait O
 presque O
 se O
 croire O
 en O
-Bretagne O
+bretagne O
 #PUNCT# O
 
-Et O
+et O
 l O
 #PUNCT# O
 équipe B-positive

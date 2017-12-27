@@ -1,13 +1,13 @@
-When O
-I O
+when O
+i O
 called O
 this O
 morning O
 #PUNCT# O
-I O
+i O
 didn't O
 think O
-I O
+i O
 would O
 be O
 able O
@@ -18,7 +18,7 @@ at O
 #DIGIT# O
 #PUNCT# O
 but O
-I O
+i O
 was O
 able O
 to O
@@ -32,23 +32,23 @@ other O
 guests O
 #PUNCT# O
 
-The O
-tuna B-positive
+the O
+tuna O
 and O
 wasabe O
-potatoes I-positive
+potatoes O
 are O
 excellent O
 #PUNCT# O
 
-My O
+my O
 favortie O
 pizza O
 joint O
 in O
-Seattle O
+seattle O
 
-Food B-positive
+food B-positive
 wise O
 #PUNCT# O
 its O
@@ -76,23 +76,23 @@ away O
 over O
 by O
 the O
-Beverly O
-Center O
+beverly O
+center O
 #PUNCT# O
 
-My O
+my O
 mouth O
 felt O
 very O
 dry O
 afterwards O
 and O
-I O
+i O
 had O
 that O
 signature O
 #PUNCT# O
-MSG O
+msg O
 #PUNCT# O
 taste O
 lingering O
@@ -100,13 +100,13 @@ in O
 my O
 throat O
 after O
-I O
+i O
 left O
 the O
 restaurant O
 #PUNCT# O
 
-It's O
+it's O
 a O
 tiny O
 place O
@@ -122,9 +122,9 @@ on O
 a O
 weekend O
 #PUNCT# O
-Thurs O
+thurs O
 #PUNCT# O
-Sun O
+sun O
 #PUNCT# O
 you O
 will O
@@ -140,11 +140,11 @@ a O
 seat O
 at O
 the O
-sushi B-positive
+sushi O
 bar O
 #PUNCT# O
 
-The O
+the O
 wine B-positive
 list I-positive
 is O
@@ -159,10 +159,10 @@ my O
 recent O
 trip O
 to O
-Italy O
+italy O
 #PUNCT# O
 
-We O
+we O
 all O
 agreed O
 that O
@@ -172,19 +172,19 @@ one O
 of O
 the O
 best O
-seafood B-positive
+seafood O
 restaurants O
 in O
-New O
-York O
+new O
+york O
 #PUNCT# O
 
-Believe O
+believe O
 it O
 baby O
 #PUNCT# O
 
-We O
+we O
 have O
 since O
 returned O
@@ -209,14 +209,14 @@ beer O
 cold O
 and O
 good O
-#PUNCT# B-positive
-#PUNCT# I-positive
-
-Compared O
-to O
-Ess-a O
 #PUNCT# O
-Tal O
+#PUNCT# O
+
+compared O
+to O
+ess-a O
+#PUNCT# O
+tal O
 offers O
 a O
 less O
@@ -224,18 +224,18 @@ doughy O
 bagel O
 #PUNCT# O
 
-It O
+it O
 was O
 so O
 much O
 though O
 that O
-I O
+i O
 could O
 barely O
 finish O
 but O
-I O
+i O
 did O
 #PUNCT# O
 since O
@@ -256,7 +256,7 @@ obviously O
 chinese O
 #PUNCT# O
 
-This O
+this O
 was O
 #PUNCT# O
 from O
@@ -270,7 +270,7 @@ uncomfortable O
 experience O
 #PUNCT# O
 
-I O
+i O
 went O
 here O
 with O
@@ -292,7 +292,7 @@ a O
 table O
 #PUNCT# O
 
-We O
+we O
 concluded O
 with O
 tiramisu O
@@ -304,7 +304,7 @@ were O
 delicious O
 #PUNCT# O
 
-Not O
+not O
 much O
 of O
 a O
@@ -317,25 +317,25 @@ either O
 we O
 went O
 with O
-Brahma O
+brahma O
 #PUNCT# O
 
 – O
-This O
+this O
 review O
 is O
 for O
 the O
-Southglen B-positive
-location I-positive
+southglen O
+location O
 which O
 is O
 not O
 listed O
 in O
-Citysearch O
+citysearch O
 #PUNCT# O
-I O
+i O
 wish O
 this O
 review O
@@ -352,7 +352,7 @@ addressed O
 by O
 management O
 but O
-Snooze O
+snooze O
 has O
 people O
 climbing O
@@ -370,9 +370,9 @@ overpriced O
 restaurant O
 with O
 mediocre O
-food B-negative
+food O
 and O
-service B-positive
+service O
 #PUNCT# O
 so O
 this O
@@ -386,32 +386,32 @@ negative O
 ones O
 for O
 their O
-Larimer B-negative
-location I-negative
+larimer O
+location O
 will O
 go O
 unaddressed O
 #PUNCT# O
 
-I'll O
+i'll O
 be O
 back O
 for O
 sure O
 #PUNCT# O
 
-Good O
-Experience B-positive
+good O
+experience O
 
-The O
-lox B-positive
+the O
+lox O
 is O
 always O
 fresh O
 too O
 #PUNCT# O
 
-Although O
+although O
 we O
 were O
 looking O
@@ -420,16 +420,16 @@ regular O
 lettuce O
 and O
 some O
-walnuts O
+walnuts B-positive
 the O
-salads O
+salads B-positive
 we O
 got O
 were O
 great O
 #PUNCT# O
 
-We've O
+we've O
 tried O
 before O
 but O
@@ -442,28 +442,28 @@ take O
 reservations O
 #PUNCT# O
 
-Beautiful O
+beautiful O
 experience O
 #PUNCT# O
 
-Good O
+good O
 drink O
 #PUNCT# O
 
-There O
+there O
 is O
 #PUNCT# O
-Expensive-but-worth-it O
+expensive-but-worth-it O
 #PUNCT# O
 and O
 there O
 is O
 #PUNCT# O
-Expensive-and-WTF O
+expensive-and-wtf O
 #PUNCT# O
 #PUNCT# O
 
-And O
+and O
 it O
 was O
 quick O
@@ -475,7 +475,7 @@ important O
 
 this O
 little O
-place B-positive
+place O
 has O
 a O
 cute O
@@ -487,12 +487,12 @@ city O
 prices O
 #PUNCT# O
 
-The O
-location B-positive
+the O
+location O
 and O
 ambience B-positive
 is O
-Ok O
+ok O
 but O
 the O
 food B-positive
@@ -504,7 +504,7 @@ for O
 it O
 #PUNCT# O
 
-I O
+i O
 literally O
 just O
 got O
@@ -512,9 +512,9 @@ back O
 home O
 after O
 visiting O
-Casa B-negative
-La I-negative
-Femme I-positive
+casa B-negative
+la I-negative
+femme I-negative
 and O
 was O
 so O
@@ -539,21 +539,21 @@ and O
 time O
 #PUNCT# O
 
-The O
-place B-positive
+the O
+place O
 itself O
 is O
 beautiful O
 the O
 bar O
-scene O
+scene B-positive
 seems O
 to O
 be O
 happening O
 #PUNCT# O
 
-Also O
+also O
 #PUNCT# O
 the O
 sandwiches O
@@ -573,7 +573,7 @@ a O
 side O
 #PUNCT# O
 
-The O
+the O
 stuff O
 tilapia O
 was O
@@ -584,7 +584,7 @@ like O
 cardboard O
 #PUNCT# O
 
-You O
+you O
 can O
 easily O
 hear O
@@ -601,7 +601,7 @@ not O
 overbearing O
 #PUNCT# O
 
-It's O
+it's O
 definately O
 not O
 a O
@@ -616,7 +616,7 @@ impress O
 someone O
 #PUNCT# O
 
-The O
+the O
 lamb B-positive
 was O
 tender O
@@ -626,29 +626,29 @@ of O
 flavor O
 #PUNCT# O
 the O
-dessert B-negative
+dessert O
 was O
 divine O
 #PUNCT# O
 #PUNCT# O
 
-Great O
+great O
 vibe B-positive
-#PUNCT# I-positive
+#PUNCT# O
 lots O
 of O
 people O
 #PUNCT# O
 
-To O
+to O
 start O
 things O
 off O
 #PUNCT# O
 our O
 lovely O
-server I-positive
-Brooke O
+server B-positive
+brooke O
 was O
 quickly O
 on O
@@ -660,7 +660,7 @@ drink O
 order O
 #PUNCT# O
 
-We O
+we O
 refused O
 to O
 pay O
@@ -681,17 +681,17 @@ food B-positive
 anymore O
 #PUNCT# O
 
-The O
-naan B-positive
+the O
+naan O
 was O
 some O
 of O
 the O
 best O
-I've O
+i've O
 had O
 and O
-I O
+i O
 really O
 enjoyed O
 the O
@@ -702,7 +702,7 @@ too O
 tomatoey O
 #PUNCT# O
 
-Fabulous O
+fabulous O
 food B-positive
 #PUNCT# O
 if O
@@ -717,13 +717,13 @@ you O
 off O
 – O
 
-Single O
-Worst O
-Restaurant O
+single O
+worst O
+restaurant O
 in O
-Manhattan O
+manhattan O
 
-Inside O
+inside O
 is O
 a O
 little O
@@ -735,7 +735,7 @@ be O
 expected O
 #PUNCT# O
 
-However O
+however O
 #PUNCT# O
 they O
 do O
@@ -762,26 +762,26 @@ your O
 cellphone O
 #PUNCT# O
 
-Go O
+go O
 to O
 japanese O
-sushi O
-place O
+sushi B-positive
+place I-positive
 or O
-Spanish O
-tapas O
-place O
+spanish B-positive
+tapas I-positive
+place I-positive
 #PUNCT# O
 this O
 creation O
 in O
-Williamsburg O
+williamsburg O
 is O
 a O
 misstake O
 #PUNCT# O
 
-Not O
+not O
 one O
 to O
 jump O
@@ -797,7 +797,7 @@ online O
 reviewing O
 #PUNCT# O
 #PUNCT# O
-I O
+i O
 called O
 the O
 restaurant O
@@ -809,7 +809,7 @@ heads O
 up O
 that O
 their O
-kitchen B-positive
+kitchen O
 might O
 want O
 to O
@@ -822,9 +822,9 @@ prep O
 stations O
 #PUNCT# O
 
-I'm O
+i'm O
 glad O
-I O
+i O
 was O
 introduced O
 to O
@@ -837,10 +837,10 @@ a O
 rare O
 gem O
 in O
-NY O
+ny O
 #PUNCT# O
 
-It's O
+it's O
 a O
 rather O
 cramped O
@@ -853,7 +853,7 @@ closes O
 early O
 #PUNCT# O
 
-The O
+the O
 food B-positive
 is O
 fantastic O
@@ -868,12 +868,12 @@ very O
 affordable O
 #PUNCT# O
 
-Mmm O
+mmm O
 #PUNCT# O
 good O
 #PUNCT# O
 
-But O
+but O
 #PUNCT# O
 #DIGIT# O
 for O
@@ -884,62 +884,62 @@ two O
 that O
 didn't O
 include O
-Wine O
+wine B-positive
 #PUNCT# O
 
-The O
+the O
 staff B-positive
 offers O
 impeccable O
-service B-negative
+service B-positive
 #PUNCT# O
 
-Great O
-Indian B-positive
-Food I-positive
+great O
+indian B-positive
+food I-positive
 #PUNCT# O
 
 – O
-As O
+as O
 with O
 most O
 restaurants O
 in O
-Seattle O
+seattle O
 #PUNCT# O
-Mioposto's O
-service B-negative
+mioposto's O
+service O
 was O
 bad O
 and O
 the O
-food B-positive
+food O
 was O
 overpriced O
 #PUNCT# O
 
-Great O
-draft B-positive
+great O
+draft O
 and O
-bottle B-positive
-selection I-positive
+bottle O
+selection O
 and O
 the O
-pizza B-positive
+pizza O
 rocks O
 #PUNCT# O
 
-We O
+we O
 went O
 to O
-Ino O
+ino O
 for O
-Valentines O
+valentines O
 #PUNCT# O
 
-The O
-wait B-positive
-staff I-positive
+the O
+wait O
+staff B-positive
 is O
 pleasant O
 #PUNCT# O
@@ -971,7 +971,7 @@ way O
 #PUNCT# O
 #PUNCT# O
 
-There O
+there O
 is O
 something O
 about O
@@ -987,21 +987,21 @@ every O
 week O
 #PUNCT# O
 
-The O
+the O
 last O
 two O
 times O
-I O
+i O
 ordered O
 from O
 here O
 my O
-food O
+food B-positive
 was O
 soo O
 spicy O
 that O
-I O
+i O
 could O
 barely O
 eat O
@@ -1020,7 +1020,7 @@ the O
 dish O
 #PUNCT# O
 
-Quite O
+quite O
 frankly O
 #PUNCT# O
 this O
@@ -1029,20 +1029,20 @@ some O
 of O
 the O
 worst O
-sushi O
-I O
+sushi B-positive
+i O
 have O
 ever O
 tried O
 #PUNCT# O
 
-If O
-I O
+if O
+i O
 could O
 give O
 #DIGIT# O
 stars O
-I O
+i O
 would O
 do O
 so O
@@ -1051,7 +1051,7 @@ this O
 place O
 #PUNCT# O
 
-I O
+i O
 have O
 never O
 before O
@@ -1062,16 +1062,16 @@ of O
 relatively O
 good O
 nigiri B-positive
-#PUNCT# I-positive
+#PUNCT# O
 
-When O
+when O
 family O
 came O
 in O
 he O
 gave O
 them O
-apps O
+apps B-positive
 to O
 test O
 their O
@@ -1084,7 +1084,7 @@ for O
 them O
 #PUNCT# O
 
-With O
+with O
 the O
 exception O
 of O
@@ -1105,7 +1105,7 @@ started O
 watering O
 #PUNCT# O
 the O
-food B-negative
+food O
 here O
 was O
 decent O
@@ -1114,13 +1114,13 @@ not O
 great O
 #PUNCT# O
 
-What O
+what O
 a O
 great O
-place B-positive
+place O
 #PUNCT# O
 
-My O
+my O
 friend O
 is O
 #DIGIT# O
@@ -1133,17 +1133,17 @@ we O
 had O
 #PUNCT# O
 
-The O
+the O
 rest O
 of O
 the O
-dim O
-sum O
+dim B-neutral
+sum I-neutral
 #PUNCT# O
 though O
 pricey O
 by O
-Chinatown O
+chinatown O
 standards O
 #PUNCT# O
 is O
@@ -1151,7 +1151,7 @@ worth O
 it O
 #PUNCT# O
 
-Much O
+much O
 of O
 the O
 time O
@@ -1166,20 +1166,20 @@ about O
 you O
 #PUNCT# O
 
-Best O
-In O
-ALL O
+best O
+in O
+all O
 of O
-NYC O
+nyc O
 
-Trust O
+trust O
 me O
 #PUNCT# O
 
-And O
+and O
 where O
 does O
-Patis O
+patis O
 go O
 wrong O
 #PUNCT# O
@@ -1187,14 +1187,14 @@ no O
 where O
 #PUNCT# O
 
-This O
+this O
 is O
 undoubtedly O
 my O
 favorite O
 modern O
-Japanese O
-brasserie I-positive
+japanese O
+brasserie O
 #PUNCT# O
 that O
 don O
@@ -1220,7 +1220,7 @@ the O
 city O
 #PUNCT# O
 
-My O
+my O
 husband O
 said O
 he O
@@ -1240,8 +1240,8 @@ even O
 exclaimed O
 that O
 the O
-french B-positive
-fries I-positive
+french O
+fries O
 were O
 the O
 best O
@@ -1250,13 +1250,13 @@ has O
 had O
 #PUNCT# O
 
-We O
+we O
 asked O
 for O
 sides O
 which O
 the O
-waiter B-negative
+waiter O
 than O
 admitted O
 that O
@@ -1272,7 +1272,7 @@ our O
 order O
 #PUNCT# O
 
-I O
+i O
 am O
 bringing O
 my O
@@ -1283,7 +1283,7 @@ next O
 time O
 #PUNCT# O
 
-These O
+these O
 are O
 overpriced O
 and O
@@ -1297,7 +1297,7 @@ the O
 corner O
 #PUNCT# O
 
-After O
+after O
 dinner O
 the O
 manager B-negative
@@ -1308,7 +1308,7 @@ boyfriend O
 asked O
 him O
 #PUNCT# O
-Where O
+where O
 are O
 you O
 from O
@@ -1321,7 +1321,7 @@ how O
 things O
 work O
 in O
-America O
+america O
 #PUNCT# O
 and O
 in O
@@ -1343,7 +1343,7 @@ survive O
 on O
 #PUNCT# O
 
-It O
+it O
 was O
 well O
 worth O
@@ -1351,10 +1351,10 @@ the O
 wait O
 #PUNCT# O
 
-My O
+my O
 husband O
 and O
-I O
+i O
 thougt O
 it O
 would O
@@ -1364,10 +1364,10 @@ to O
 go O
 to O
 the O
-Jekyll B-positive
+jekyll O
 and O
-Hyde I-positive
-Pub I-positive
+hyde O
+pub O
 for O
 our O
 anniversary O
@@ -1381,12 +1381,12 @@ was O
 fantastic O
 #PUNCT# O
 
-My O
+my O
 wife O
 had O
 the O
-fried B-positive
-shrimp I-positive
+fried B-neutral
+shrimp I-neutral
 which O
 are O
 huge O
@@ -1395,21 +1395,21 @@ loved O
 it O
 #PUNCT# O
 
-I O
+i O
 stumbled O
 upon O
 this O
 great O
 pizzeria O
 as O
-I O
+i O
 explored O
 my O
 new O
 neighborhood O
 #PUNCT# O
 
-It O
+it O
 #PUNCT# O
 s O
 served O
@@ -1431,7 +1431,7 @@ in O
 taste O
 #PUNCT# O
 
-The O
+the O
 food B-positive
 was O
 absolutely O
@@ -1439,7 +1439,7 @@ amazing O
 #PUNCT# O
 #PUNCT# O
 
-We O
+we O
 put O
 out O
 name O
@@ -1462,19 +1462,19 @@ minute O
 wait O
 #PUNCT# O
 
-I O
+i O
 do O
 not O
 think O
 dinner O
 in O
-Manhattan O
+manhattan O
 should O
 cost O
 #PUNCT# O
 400.00 O
 where O
-I O
+i O
 am O
 not O
 swept O
@@ -1483,7 +1483,7 @@ my O
 feet O
 #PUNCT# O
 
-lobster O
+lobster B-positive
 was O
 good O
 #PUNCT# O
@@ -1503,11 +1503,11 @@ a O
 secret O
 #PUNCT# O
 
-Very O
+very O
 disappointed O
 #PUNCT# O
 
-Try O
+try O
 the O
 congee B-positive
 and O
@@ -1519,9 +1519,9 @@ fried O
 dough O
 they O
 call O
-Ow O
-Ley O
-Soh O
+ow O
+ley O
+soh O
 #PUNCT# O
 a O
 delicious O
@@ -1531,7 +1531,7 @@ tasting O
 bread O
 #PUNCT# O
 
-Rather O
+rather O
 than O
 preparing O
 vegetarian O
@@ -1562,7 +1562,7 @@ presentation O
 #PUNCT# O
 #PUNCT# O
 
-In O
+in O
 the O
 end O
 you O
@@ -1573,17 +1573,17 @@ a O
 fair O
 tab O
 and O
-NOTHING O
-BUT O
-A O
-GREAT O
-TIME O
+nothing O
+but O
+a O
+great O
+time O
 #PUNCT# O
 #PUNCT# O
 #PUNCT# O
 
 – O
-I O
+i O
 am O
 exceedingly O
 pleased O
@@ -1593,17 +1593,17 @@ that O
 my O
 dinner O
 at O
-Ray's O
-Boathouse I-positive
+ray's O
+boathouse O
 last O
-Friday O
+friday O
 completely O
 exceeded O
 my O
 expectations O
 #PUNCT# O
 
-She O
+she O
 was O
 very O
 helpful O
@@ -1626,11 +1626,11 @@ we O
 knew O
 nothing O
 about O
-Indian O
+indian O
 food O
 #PUNCT# O
 
-Went O
+went O
 here O
 on O
 a O
@@ -1638,7 +1638,7 @@ friend's O
 reccomendation O
 #PUNCT# O
 
-I O
+i O
 know O
 many O
 people O
@@ -1648,12 +1648,12 @@ favorite O
 types O
 of O
 pizza B-positive
-and O
-pizza O
+and I-positive
+pizza I-positive
 places O
 #PUNCT# O
 but O
-Mioposto's O
+mioposto's O
 pizza O
 lacks O
 quality O
@@ -1662,7 +1662,7 @@ good O
 taste O
 #PUNCT# O
 
-I O
+i O
 went O
 there O
 for O
@@ -1674,22 +1674,22 @@ not O
 as O
 good O
 as O
-I O
+i O
 expected O
 from O
 the O
 reviews O
-I O
+i O
 read O
 #PUNCT# O
 
-What O
+what O
 a O
 hassle O
 #PUNCT# O
 
-This O
-place B-negative
+this O
+place O
 must O
 have O
 cost O
@@ -1700,7 +1700,7 @@ to O
 build O
 #PUNCT# O
 
-On O
+on O
 the O
 way O
 out O
@@ -1716,8 +1716,8 @@ similar O
 issues O
 #PUNCT# O
 
-The O
-portions B-negative
+the O
+portions B-positive
 are O
 small O
 but O
@@ -1734,7 +1734,7 @@ for O
 that O
 #PUNCT# O
 
-We O
+we O
 all O
 felt O
 it O
@@ -1743,13 +1743,13 @@ worth O
 it O
 #PUNCT# O
 
-Love O
+love O
 their O
-drink B-positive
-menu I-positive
+drink O
+menu O
 #PUNCT# O
 
-If O
+if O
 you O
 are O
 going O
@@ -1765,14 +1765,14 @@ worth O
 it O
 #PUNCT# O
 
-Service B-positive
+service B-positive
 was O
 kind O
 of O
 slow O
 #PUNCT# O
 our O
-waitress O
+waitress B-negative
 took O
 forever O
 to O
@@ -1788,7 +1788,7 @@ that O
 busy O
 #PUNCT# O
 
-Its O
+its O
 worth O
 the O
 wait O
@@ -1820,12 +1820,12 @@ my O
 family O
 #PUNCT# O
 
-Service B-positive
+service B-positive
 is O
 average O
 #PUNCT# O
 
-One O
+one O
 would O
 think O
 we'd O
@@ -1842,7 +1842,7 @@ we O
 got O
 a O
 snobby O
-waiter B-negative
+waiter O
 wouldn't O
 even O
 take O
@@ -1864,7 +1864,7 @@ do O
 so O
 #PUNCT# O
 
-After O
+after O
 sitting O
 at O
 the O
@@ -1892,7 +1892,7 @@ with O
 us O
 #PUNCT# O
 
-The O
+the O
 frizzy O
 retro O
 girl O
@@ -1900,8 +1900,8 @@ girl O
 with O
 winged O
 #PUNCT# O
-Dame O
-Edna O
+dame O
+edna O
 glasses O
 #PUNCT# O
 will O
@@ -1917,7 +1917,7 @@ a O
 drink O
 #PUNCT# O
 
-If O
+if O
 it's O
 nice O
 outside O
@@ -1928,19 +1928,19 @@ a O
 table O
 in O
 the O
-balcony O
+balcony B-positive
 #PUNCT# O
 
-Dokebi O
+dokebi O
 gives O
-Williamsburg O
+williamsburg O
 the O
 right O
 one-two O
 punch O
 of O
 classic O
-Korean O
+korean O
 food O
 and O
 fusion O
@@ -1951,7 +1951,7 @@ belly O
 tacos O
 #PUNCT# O
 
-It O
+it O
 is O
 also O
 extremely O
@@ -1960,7 +1960,7 @@ priced O
 #PUNCT# O
 
 this O
-place B-positive
+place O
 #PUNCT# O
 we O
 stumbled O
@@ -1972,7 +1972,7 @@ day O
 weekend O
 #PUNCT# O
 
-Went O
+went O
 on O
 a O
 #DIGIT# O
@@ -1981,14 +1981,14 @@ oyster O
 binge O
 #PUNCT# O
 with O
-Fish O
+fish O
 bringing O
 up O
 the O
 closing O
 #PUNCT# O
 and O
-I O
+i O
 am O
 so O
 glad O
@@ -1997,7 +1997,7 @@ was O
 the O
 place O
 it O
-O O
+o O
 trip O
 ended O
 #PUNCT# O
@@ -2008,7 +2008,7 @@ so O
 great O
 #PUNCT# O
 
-Next O
+next O
 time O
 we O
 will O
@@ -2023,15 +2023,15 @@ restaurants O
 close O
 by O
 like O
-Mimi's O
-Cafe B-positive
+mimi's O
+cafe O
 and O
-Claim O
-Jumper O
+claim O
+jumper O
 #PUNCT# O
 
-The O
-drinks B-positive
+the O
+drinks O
 are O
 great O
 #PUNCT# O
@@ -2039,10 +2039,10 @@ especially O
 when O
 made O
 by O
-Raymond O
+raymond O
 #PUNCT# O
 
-Most O
+most O
 importantly O
 #PUNCT# O
 food B-positive
@@ -2050,13 +2050,13 @@ is O
 excellent O
 #PUNCT# O
 
-The O
+the O
 service B-positive
 is O
 awful O
 #PUNCT# O
 
-The O
+the O
 food B-positive
 is O
 a O
@@ -2066,7 +2066,7 @@ rough O
 #PUNCT# O
 #PUNCT# O
 the O
-food B-positive
+food O
 is O
 delicious O
 and O
@@ -2081,7 +2081,7 @@ and O
 tomatoes O
 #PUNCT# O
 
-Went O
+went O
 here O
 last O
 night O
@@ -2100,7 +2100,7 @@ surprisingly O
 excellent O
 #PUNCT# O
 
-If O
+if O
 there O
 is O
 a O
@@ -2126,7 +2126,7 @@ is O
 great O
 #PUNCT# O
 
-Everyone O
+everyone O
 seemed O
 generally O
 happy O
@@ -2140,18 +2140,18 @@ brother O
 who O
 had O
 the O
-grilled B-positive
-Mahi I-positive
-Mahi I-positive
+grilled O
+mahi O
+mahi O
 #PUNCT# O
 seemingly O
 drenched O
 in O
-Grapfruit O
-Juice O
+grapfruit O
+juice O
 #PUNCT# O
 
-The O
+the O
 bathroom B-negative
 itself O
 is O
@@ -2166,7 +2166,7 @@ one O
 sink O
 #PUNCT# O
 the O
-girl B-negative
+girl O
 was O
 staying O
 totally O
@@ -2183,20 +2183,20 @@ dispenser O
 #PUNCT# O
 
 – O
-Schooner O
+schooner O
 or O
-Later's O
+later's O
 charming O
 location O
 along O
 the O
 marina O
 in O
-Long O
-Beach O
+long O
+beach O
 and O
 average O
-food B-negative
+food O
 does O
 not O
 #PUNCT# O
@@ -2207,24 +2207,24 @@ for O
 its O
 very O
 poor O
-customer B-negative
-service I-negative
+customer O
+service O
 #PUNCT# O
 
-The O
+the O
 pizza B-positive
 was O
 slightly O
 reminescent O
 of O
-Baker's O
-Beach O
+baker's O
+beach O
 pizza O
 which O
 occupied O
 the O
 the O
-space B-negative
+space O
 years O
 ago O
 #PUNCT# O
@@ -2234,8 +2234,8 @@ second O
 #PUNCT# O
 #PUNCT# O
 
-The O
-restaurant B-positive
+the O
+restaurant O
 was O
 packed O
 at O
@@ -2257,24 +2257,24 @@ were O
 seated O
 #PUNCT# O
 
-For O
+for O
 a O
-Fabulous O
-Wedding O
+fabulous O
+wedding O
 #PUNCT# O
 
-The O
-entrees B-negative
+the O
+entrees O
 were O
 served O
 with O
-miso O
+miso B-positive
 soup I-positive
 and O
 rice O
 #PUNCT# O
 
-Again O
+again O
 #PUNCT# O
 no O
 apology O
@@ -2284,14 +2284,14 @@ is O
 there O
 anything O
 else O
-I O
+i O
 can O
 get O
 you O
 #PUNCT# O
 no O
 can O
-I O
+i O
 get O
 you O
 a O
@@ -2307,7 +2307,7 @@ nothing O
 #PUNCT# O
 #PUNCT# O
 
-Visited O
+visited O
 there O
 while O
 on O
@@ -2318,20 +2318,20 @@ the O
 reviews O
 #PUNCT# O
 
-A O
+a O
 must O
 try O
 #PUNCT# O
 
-DONOT O
-GO O
+donot O
+go O
 #PUNCT# O
 
-This O
+this O
 is O
 a O
 wonderful O
-place B-positive
+place O
 on O
 all O
 stand O
@@ -2342,11 +2342,11 @@ ofr O
 money O
 #PUNCT# O
 
-Worth O
+worth O
 the O
 wait O
 
-I've O
+i've O
 been O
 many O
 time O
@@ -2357,26 +2357,26 @@ been O
 disappointed O
 #PUNCT# O
 
-The O
+the O
 servers B-positive
 behind O
 the O
-counter B-positive
+counter B-negative
 are O
 always O
 friendly O
 and O
 helpful O
-#PUNCT# B-positive
+#PUNCT# O
 
-We O
+we O
 were O
 fast O
 to O
 order O
 the O
-appetizer O
-platter O
+appetizer B-positive
+platter I-positive
 since O
 we O
 were O
@@ -2384,13 +2384,13 @@ very O
 hungry O
 #PUNCT# O
 
-I O
+i O
 also O
 recommend O
 the O
-rice O
-dishes O
-or O
+rice B-negative
+dishes I-negative
+or I-negative
 the O
 different O
 varieties O
@@ -2402,23 +2402,23 @@ porridge O
 #PUNCT# O
 #PUNCT# O
 
-The O
+the O
 food B-positive
 is O
 sinful O
 #PUNCT# O
 
-A O
+a O
 real O
 dissapointment O
 #PUNCT# O
 
-Love O
-Al O
-Di O
-La O
+love O
+al O
+di O
+la O
 
-The O
+the O
 only O
 thing O
 that O
@@ -2426,7 +2426,7 @@ strikes O
 you O
 is O
 the O
-decor B-positive
+decor O
 #PUNCT# O
 #PUNCT# O
 not O
@@ -2435,14 +2435,14 @@ pleasant O
 #PUNCT# O
 #PUNCT# O
 
-I O
+i O
 highly O
 recommend O
 it O
 #PUNCT# O
 
-Their O
-calzones B-positive
+their O
+calzones O
 are O
 horrific O
 #PUNCT# O
@@ -2450,10 +2450,10 @@ bad O
 #PUNCT# O
 vomit-inducing O
 #PUNCT# O
-YUCK O
+yuck O
 #PUNCT# O
 
-I O
+i O
 thanked O
 my O
 friend O
@@ -2461,7 +2461,7 @@ who O
 recommended O
 me O
 this O
-restaurant B-positive
+restaurant O
 and O
 will O
 certainly O
@@ -2471,7 +2471,7 @@ to O
 others O
 #PUNCT# O
 
-Sometimes O
+sometimes O
 you O
 pay O
 a O
@@ -2491,7 +2491,7 @@ are O
 expensive O
 #PUNCT# O
 
-The O
+the O
 service B-positive
 was O
 courteous O
@@ -2499,7 +2499,7 @@ and O
 attentive O
 #PUNCT# O
 
-Great O
+great O
 food B-positive
 and O
 the O
@@ -2509,7 +2509,7 @@ very O
 reasonable O
 #PUNCT# O
 
-There O
+there O
 are O
 no O
 negatives O
@@ -2518,9 +2518,9 @@ speak O
 of O
 #PUNCT# O
 
-The O
+the O
 duck B-positive
-confit I-positive
+confit O
 is O
 always O
 amazing O
@@ -2538,13 +2538,13 @@ this O
 world O
 #PUNCT# O
 
-I O
+i O
 love O
-Dungeness O
+dungeness B-positive
 crabs I-positive
 and O
 at O
-Ray's O
+ray's O
 you O
 can O
 get O
@@ -2557,7 +2557,7 @@ different O
 ways O
 #PUNCT# O
 
-I O
+i O
 probably O
 wouldn't O
 go O
@@ -2565,7 +2565,7 @@ back O
 though O
 #PUNCT# O
 cuz O
-I O
+i O
 don't O
 know O
 if O
@@ -2574,8 +2574,8 @@ worth O
 it O
 #PUNCT# O
 
-This O
-place B-positive
+this O
+place O
 has O
 the O
 the O
@@ -2601,7 +2601,7 @@ same O
 time O
 #PUNCT# O
 
-I O
+i O
 have O
 reservations O
 about O
@@ -2626,7 +2626,7 @@ can O
 probably O
 order O
 more O
-food O
+food B-positive
 than O
 you O
 can O
@@ -2644,7 +2644,7 @@ the O
 menu O
 #PUNCT# O
 
-Service B-positive
+service B-positive
 #PUNCT# O
 however O
 #PUNCT# O
@@ -2652,17 +2652,17 @@ was O
 excellent O
 #PUNCT# O
 and O
-I O
+i O
 liked O
 the O
 setting B-positive
-#PUNCT# I-positive
-atmosphere O
+#PUNCT# O
+atmosphere B-positive
 a O
 lot O
 #PUNCT# O
 
-This O
+this O
 establishment O
 really O
 made O
@@ -2680,41 +2680,41 @@ story O
 the O
 airing O
 of O
-FOOD O
-TELEVISIONS O
+food O
+televisions O
 #PUNCT# O
-DINERS O
+diners O
 #PUNCT# O
-DRIVE-INS O
+drive-ins O
 #PUNCT# O
-AND O
-DIVES O
+and O
+dives O
 #PUNCT# O
 hosted O
 by O
-Guy O
-Fieri O
+guy O
+fieri O
 #PUNCT# O
 in O
 which O
-Schooner O
+schooner O
 or O
-Later O
+later O
 was O
 subject O
 of O
 #PUNCT# O
 
-As O
+as O
 a O
-Japanese O
+japanese O
 native O
 #PUNCT# O
-I've O
+i've O
 lived O
 in O
 the O
-Tristate O
+tristate O
 area O
 for O
 over O
@@ -2722,7 +2722,7 @@ over O
 years O
 #PUNCT# O
 but O
-I O
+i O
 was O
 just O
 so O
@@ -2732,7 +2732,7 @@ this O
 place O
 #PUNCT# O
 
-For O
+for O
 the O
 people O
 who O
@@ -2742,13 +2742,13 @@ food B-positive
 plus O
 great O
 service B-positive
-#PUNCT# I-positive
-Roxy I-positive
+#PUNCT# O
+roxy O
 is O
 a O
 place O
 to O
-AVOID O
+avoid O
 #PUNCT# O
 
 please O
@@ -2757,36 +2757,36 @@ fool O
 us O
 #PUNCT# O
 
-Hands O
+hands O
 down O
 #PUNCT# O
 the O
 best O
 tuna O
-I O
+i O
 have O
 ever O
 had O
 #PUNCT# O
 
-The O
-anti-pasta B-positive
+the O
+anti-pasta O
 was O
 excellent O
 #PUNCT# O
 especially O
 the O
-calamari B-positive
-#PUNCT# I-positive
+calamari O
+#PUNCT# O
 as O
 were O
 the O
 filling O
-pasta I-positive
+pasta O
 mains O
 #PUNCT# O
 
-Told O
+told O
 us O
 to O
 sit O
@@ -2804,19 +2804,19 @@ was O
 reserved O
 #PUNCT# O
 
-Amazing O
+amazing O
 #PUNCT# O
 
-I O
+i O
 know O
 because O
-I O
+i O
 live O
 nearby O
 #PUNCT# O
 
-The O
-soup O
+the B-negative
+soup I-negative
 for O
 the O
 udon O
@@ -2827,11 +2827,11 @@ and O
 water O
 #PUNCT# O
 
-AVOID O
-THE O
-PLACE B-positive
+avoid O
+the O
+place O
 
-It O
+it O
 was O
 one O
 of O
@@ -2839,7 +2839,7 @@ the O
 few O
 places O
 in O
-SoCal O
+socal O
 where O
 you O
 would O
@@ -2855,7 +2855,7 @@ a O
 car O
 #PUNCT# O
 
-Outside O
+outside O
 in O
 the O
 area O
@@ -2872,33 +2872,33 @@ running O
 around O
 while O
 their O
-parents B-positive
-sipped I-positive
-wine I-positive
-#PUNCT# I-positive
+parents O
+sipped O
+wine O
+#PUNCT# O
 
-I O
+i O
 took O
 one O
 look O
 at O
 the O
-chicken O
+chicken B-positive
 and O
-I O
+i O
 was O
 appalled O
 #PUNCT# O
 
-Great O
-survice B-positive
+great O
+survice O
 
 fresh O
-restaurant B-positive
+restaurant O
 was O
 amazing O
 #PUNCT# O
-food I-positive
+food B-positive
 was O
 delicious O
 and O
@@ -2907,7 +2907,7 @@ course O
 fresh O
 #PUNCT# O
 
-I O
+i O
 cannot O
 imagine O
 you O
@@ -2919,7 +2919,7 @@ eat O
 there O
 #PUNCT# O
 
-Even O
+even O
 after O
 they O
 overcharged O
@@ -2927,12 +2927,12 @@ me O
 the O
 last O
 time O
-I O
+i O
 was O
 there O
 #PUNCT# O
 
-We O
+we O
 did O
 arrive O
 late O
@@ -2940,7 +2940,7 @@ for O
 our O
 reservation O
 so O
-I O
+i O
 can O
 not O
 complain O
@@ -2954,7 +2954,7 @@ a O
 table O
 #PUNCT# O
 
-I O
+i O
 have O
 been O
 twice O
@@ -2963,15 +2963,15 @@ this O
 restaurant O
 #PUNCT# O
 
-The O
-mussels B-positive
+the O
+mussels O
 were O
 fantastic O
 and O
 so O
 was O
 the O
-dessert B-negative
+dessert O
 #PUNCT# O
 definitely O
 going O
@@ -2982,21 +2982,21 @@ very O
 soon O
 #PUNCT# O
 
-Yes O
+yes O
 #PUNCT# O
-I O
+i O
 ate O
 the O
 food B-positive
 #PUNCT# O
 but O
-I O
+i O
 certainly O
 would O
 not O
 have O
 if O
-I O
+i O
 had O
 seen O
 the O
@@ -3005,7 +3005,7 @@ before O
 eating O
 #PUNCT# O
 and O
-I O
+i O
 was O
 at O
 this O
@@ -3017,15 +3017,15 @@ my O
 stomach O
 #PUNCT# O
 
-The O
-place B-positive
+the O
+place O
 was O
 nice O
 and O
 calm O
 #PUNCT# O
 
-I O
+i O
 have O
 it O
 a O
@@ -3039,9 +3039,9 @@ the O
 price O
 #PUNCT# O
 just O
-chicken O
-tikka O
-masala O
+chicken B-positive
+tikka I-positive
+masala I-positive
 #PUNCT# O
 no O
 bread O
@@ -3054,17 +3054,17 @@ is O
 #PUNCT# O
 #PUNCT# O
 which O
-I O
+i O
 would O
 expect O
 at O
 a O
 upscale O
-Indian O
+indian O
 restaurant O
 but O
 this O
-place B-negative
+place O
 doesn't O
 have O
 an O
@@ -3072,20 +3072,20 @@ upscale O
 feel O
 #PUNCT# O
 
-Our O
+our O
 server B-positive
 was O
 very O
 professional O
 and O
 friendly O
-#PUNCT# B-positive
+#PUNCT# O
 
-But O
+but O
 for O
 the O
-Shabu B-positive
-Shabu I-positive
+shabu O
+shabu O
 #PUNCT# O
 you O
 won't O
@@ -3093,14 +3093,14 @@ find O
 much O
 better O
 in O
-NY O
+ny O
 #PUNCT# O
 
-As O
+as O
 a O
 student O
 in O
-NYU O
+nyu O
 i O
 need O
 a O
@@ -3126,7 +3126,7 @@ near O
 by O
 #PUNCT# O
 
-Service B-negative
+service B-positive
 here O
 was O
 great O
@@ -3136,15 +3136,15 @@ was O
 fantastic O
 #PUNCT# O
 
-I O
+i O
 wish O
-I O
-COULD O
+i O
+could O
 be O
 refunded O
 #PUNCT# O
 
-This O
+this O
 establishment O
 is O
 consistent O
@@ -3155,12 +3155,12 @@ of O
 the O
 rest O
 of O
-Chow O
-Foods I-negative
+chow O
+foods O
 group O
 #PUNCT# O
 
-Rao's O
+rao's B-positive
 has O
 the O
 best O
@@ -3168,10 +3168,10 @@ service B-positive
 and O
 atmosphere B-positive
 in O
-NYC O
+nyc O
 #PUNCT# O
 
-For O
+for O
 each O
 course O
 we O
@@ -3190,7 +3190,7 @@ a O
 drink O
 #PUNCT# O
 
-Considering O
+considering O
 you O
 will O
 spend O
@@ -3201,17 +3201,17 @@ least O
 a O
 head O
 #PUNCT# O
-I O
+i O
 expect O
 better O
-service B-negative
+service B-positive
 #PUNCT# O
 
-This O
+this O
 is O
 the O
 perfect O
-spot O
+spot B-positive
 for O
 meeting O
 friends O
@@ -3224,10 +3224,10 @@ dinner O
 pre-theatre O
 or O
 after-theatre O
-drinks B-positive
+drinks O
 #PUNCT# O
 
-There's O
+there's O
 nice O
 and O
 quiet O
@@ -3243,7 +3243,7 @@ more O
 #PUNCT# O
 #PUNCT# O
 
-Not O
+not O
 only O
 is O
 it O
@@ -3268,7 +3268,7 @@ the O
 zen O
 and O
 intimate O
-décor B-positive
+décor O
 will O
 make O
 you O
@@ -3284,10 +3284,10 @@ the O
 city O
 #PUNCT# O
 
-Even O
+even O
 though O
 the O
-place B-negative
+place O
 is O
 not O
 beautiful O
@@ -3299,27 +3299,27 @@ for O
 itself O
 #PUNCT# O
 
-The O
-cream B-positive
-cheeses I-positive
+the O
+cream O
+cheeses O
 are O
 out O
 of O
 this O
 world O
 and O
-I O
+i O
 love O
 that O
 coffee B-positive
 #PUNCT# O
 #PUNCT# O
 
-Try O
+try O
 it O
 #PUNCT# O
 
-This O
+this O
 was O
 a O
 repeat O
@@ -3332,10 +3332,10 @@ back O
 again O
 #PUNCT# O
 
-My O
-Girlfriend O
+my O
+girlfriend O
 and O
-I O
+i O
 stumbled O
 onto O
 this O
@@ -3351,7 +3351,7 @@ great O
 time O
 #PUNCT# O
 
-Indoor B-positive
+indoor B-positive
 was O
 very O
 cozy O
@@ -3359,7 +3359,7 @@ and O
 cute O
 #PUNCT# O
 
-The O
+the O
 atmosphere B-positive
 is O
 noisy O
@@ -3379,9 +3379,9 @@ they O
 can O
 #PUNCT# O
 
-Best O
-Pastrami B-positive
-I O
+best O
+pastrami O
+i O
 ever O
 had O
 and O
@@ -3392,9 +3392,9 @@ being O
 ridiculous O
 #PUNCT# O
 
-The O
-Cypriot O
-restaurant O
+the B-positive
+cypriot I-positive
+restaurant I-positive
 has O
 a O
 lot O
@@ -3403,25 +3403,25 @@ for O
 it O
 #PUNCT# O
 
-It O
+it O
 is O
 one O
 the O
 nicest O
-outdoor O
+outdoor B-positive
 restaurants O
-I O
+i O
 have O
 ever O
 seen O
 in O
-NY--I O
+ny--i O
 am O
 from O
-Italy O
+italy O
 and O
 this O
-place B-negative
+place O
 rivals O
 the O
 ones O
@@ -3430,7 +3430,7 @@ my O
 country O
 #PUNCT# O
 
-The O
+the O
 two O
 star O
 chefs O
@@ -3446,9 +3446,9 @@ own O
 place O
 #PUNCT# O
 
-A O
+a O
 cool O
-bar B-positive
+bar O
 with O
 great O
 food B-positive
@@ -3460,7 +3460,7 @@ excellent O
 beer O
 #PUNCT# O
 
-She O
+she O
 lives O
 nearby O
 but O
@@ -3479,8 +3479,8 @@ too O
 touristy O
 #PUNCT# O
 
-The O
-menu B-positive
+the O
+menu O
 is O
 very O
 limited O
@@ -3495,7 +3495,7 @@ or O
 entrees O
 #PUNCT# O
 
-In O
+in O
 fact O
 #PUNCT# O
 it O
@@ -3511,7 +3511,7 @@ any O
 moment O
 #PUNCT# O
 
-Guaranteed O
+guaranteed O
 to O
 be O
 a O
@@ -3520,7 +3520,7 @@ experience O
 #PUNCT# O
 #PUNCT# O
 
-A O
+a O
 little O
 pricey O
 but O
@@ -3531,20 +3531,20 @@ the O
 spot B-positive
 on O
 a O
-Sunday O
+sunday O
 morning O
 #PUNCT# O
 
-My O
+my O
 roommate O
 and O
-I O
-LOVE O
+i O
+love O
 this O
-place B-positive
+place O
 #PUNCT# O
 
-I O
+i O
 have O
 a O
 but O
@@ -3553,8 +3553,8 @@ here O
 there O
 was O
 a O
-bathroom O
-attendant O
+bathroom B-negative
+attendant I-negative
 in O
 the O
 restroom O
@@ -3563,7 +3563,7 @@ was O
 odd O
 #PUNCT# O
 
-The O
+the O
 hot B-positive
 dogs I-positive
 are O
@@ -3581,7 +3581,7 @@ here O
 is O
 the O
 fantastic O
-pork O
+pork B-negative
 croquette O
 sandwich O
 #PUNCT# O
@@ -3593,7 +3593,7 @@ squishy O
 bun O
 #PUNCT# O
 
-It O
+it O
 was O
 clear O
 he O
@@ -3604,9 +3604,9 @@ really O
 care O
 #PUNCT# O
 
-I O
+i O
 thought O
-I O
+i O
 had O
 died O
 and O
@@ -3615,7 +3615,7 @@ to O
 heaven O
 #PUNCT# O
 
-The O
+the O
 food B-positive
 is O
 prepared O
@@ -3624,21 +3624,21 @@ and O
 efficiently O
 #PUNCT# O
 
-This O
-place B-positive
+this O
+place O
 has O
 the O
 best O
-Chinese B-positive
+chinese B-positive
 style I-positive
-BBQ I-positive
-ribs I-positive
+bbq I-positive
+ribs O
 in O
 the O
 city O
 #PUNCT# O
 
-I O
+i O
 recommend O
 it O
 for O
@@ -3658,14 +3658,14 @@ bit O
 expensive O
 #PUNCT# O
 
-We O
+we O
 were O
 then O
 shooed O
 inside O
 #PUNCT# O
 
-I O
+i O
 never O
 heard O
 back O
@@ -3678,7 +3678,7 @@ month O
 ago O
 #PUNCT# O
 
-We O
+we O
 got O
 a O
 little O
@@ -3690,7 +3690,7 @@ but O
 isn't O
 that O
 what O
-Saturday O
+saturday O
 nights O
 with O
 the O
@@ -3700,7 +3700,7 @@ all O
 about O
 #PUNCT# O
 
-A O
+a O
 restaurant O
 that O
 doesn't O
@@ -3721,12 +3721,12 @@ pleasant O
 atmosphere B-positive
 #PUNCT# O
 
-In O
+in O
 short O
 #PUNCT# O
-Schooner O
+schooner O
 or O
-Later O
+later O
 couldn't O
 have O
 cared O
@@ -3739,10 +3739,10 @@ their O
 establishment O
 #PUNCT# O
 
-As O
+as O
 usual O
-the O
-omikase O
+the B-positive
+omikase I-positive
 didn't O
 disappoint O
 in O
@@ -3758,7 +3758,7 @@ and O
 selection O
 #PUNCT# O
 
-I O
+i O
 stumbled O
 upon O
 this O
@@ -3766,10 +3766,10 @@ second O
 floor O
 walk-up O
 two O
-Fridays O
+fridays O
 ago O
 when O
-I O
+i O
 was O
 with O
 two O
@@ -3777,19 +3777,19 @@ friends O
 in O
 town O
 from O
-L O
+l O
 #PUNCT# O
-A O
+a O
 #PUNCT# O
 
-I O
+i O
 think O
-I've O
+i've O
 had O
 some O
 the O
 best O
-meals B-positive
+meals B-negative
 of O
 my O
 life O
@@ -3798,35 +3798,35 @@ minnow O
 #PUNCT# O
 
 – O
-Great O
+great O
 financial O
 district O
-mexican O
-spot O
+mexican B-positive
+spot I-positive
 #PUNCT# O
 
-I'll O
+i'll O
 keep O
 this O
 short O
 #PUNCT# O
 
-AMAZING O
-MY B-positive
-FAVORITE O
+amazing O
+my O
+favorite O
 #PUNCT# O
 #PUNCT# O
 #PUNCT# O
 
-I'd O
+i'd O
 hate O
 for O
 tourists O
 to O
 go O
 to O
-Park O
-Chalet O
+park O
+chalet O
 and O
 think O
 that O
@@ -3834,29 +3834,29 @@ this O
 is O
 how O
 all O
-San O
-Francisco O
+san O
+francisco O
 restaurants O
 are O
 like O
 #PUNCT# O
 
-I O
+i O
 got O
 hair O
 in O
 my O
-food O
+food B-positive
 #DIGIT# O
 times O
 of O
 then O
 #PUNCT# O
 
-Great O
+great O
 bagels B-positive
-#PUNCT# I-positive
-spreads I-positive
+#PUNCT# O
+spreads B-positive
 and O
 a O
 good O
@@ -3867,7 +3867,7 @@ out O
 in O
 #PUNCT# O
 
-My O
+my O
 six O
 year O
 old O
@@ -3875,7 +3875,7 @@ loved O
 it O
 #PUNCT# O
 
-It's O
+it's O
 very O
 spicy O
 but O
@@ -3883,16 +3883,16 @@ not O
 offensive O
 #PUNCT# O
 
-I O
+i O
 had O
-Filet B-positive
-Mignon I-positive
+filet B-positive
+mignon I-positive
 with I-positive
 garlic O
 mash O
 #PUNCT# O
 
-Friendly O
+friendly O
 staff B-positive
 that O
 actually O
@@ -3900,7 +3900,7 @@ lets O
 you O
 enjoy O
 your O
-meal O
+meal B-positive
 and O
 the O
 company O
@@ -3908,7 +3908,7 @@ you're O
 with O
 #PUNCT# O
 
-The O
+the O
 pizza B-positive
 is O
 overpriced O
@@ -3916,14 +3916,14 @@ and O
 soggy O
 #PUNCT# O
 
-You O
-Can't O
-Go O
-Wrong O
-Here O
+you O
+can't O
+go O
+wrong O
+here O
 #PUNCT# O
 
-I O
+i O
 ended O
 the O
 meal B-positive
@@ -3941,12 +3941,12 @@ tasting O
 yummy O
 #PUNCT# O
 
-But O
+but O
 the O
 best O
-pork O
-souvlaki I-negative
-I O
+pork B-negative
+souvlaki O
+i O
 ever O
 had O
 is O
@@ -3955,26 +3955,26 @@ main B-positive
 thing O
 #PUNCT# O
 
-Baluchi's O
+baluchi's O
 has O
 solid O
-food B-positive
+food O
 and O
 a O
 nice O
-decor B-positive
+decor O
 at O
 reasonable O
 prices O
 #PUNCT# O
 
-I O
+i O
 am O
 reluctant O
 to O
 write O
 because O
-I O
+i O
 would O
 not O
 want O
@@ -3989,7 +3989,7 @@ become O
 overcrowded O
 #PUNCT# O
 
-To O
+to O
 be O
 completely O
 fair O
@@ -4000,7 +4000,7 @@ redeeming O
 factor O
 was O
 the O
-food B-positive
+food O
 #PUNCT# O
 which O
 was O
@@ -4017,10 +4017,10 @@ the O
 other O
 deficiencies O
 of O
-Teodora O
+teodora O
 #PUNCT# O
 
-Terrible O
+terrible O
 service B-positive
 #PUNCT# O
 food B-positive
@@ -4028,8 +4028,8 @@ ok O
 #PUNCT# O
 pricey O
 
-The O
-place B-positive
+the O
+place O
 is O
 so O
 cool O
@@ -4040,9 +4040,9 @@ is O
 prompt O
 and O
 curtious O
-#PUNCT# B-positive
+#PUNCT# O
 
-This O
+this O
 is O
 the O
 kind O
@@ -4064,7 +4064,7 @@ secret O
 #PUNCT# O
 
 – O
-A O
+a O
 group O
 of O
 #DIGIT# O
@@ -4073,21 +4073,21 @@ us O
 went O
 there O
 for O
-Sunday O
+sunday O
 brunch O
 and O
 sat O
 outside O
 #PUNCT# O
 
-The O
+the O
 food B-positive
 was O
 actually O
 aweful O
 #PUNCT# O
 
-The O
+the O
 service B-positive
 was O
 spectacular O
@@ -4098,36 +4098,36 @@ knew O
 everything O
 about O
 the O
-menu B-positive
+menu O
 and O
 his O
-recommendations B-negative
+recommendations O
 were O
 amazing O
 #PUNCT# O
 
-Other O
+other O
 guests O
 enjoyed O
-pizza O
+pizza B-positive
 #PUNCT# O
 santa O
 fe O
 chopped O
-salad I-positive
+salad O
 and O
-fish B-positive
+fish O
 and O
-chips B-positive
+chips O
 #PUNCT# O
 
-I O
+i O
 had O
 the O
 kafta B-positive
 plate I-positive
 and O
-I O
+i O
 enjoyed O
 it O
 #PUNCT# O
@@ -4137,7 +4137,7 @@ the O
 food B-positive
 #PUNCT# O
 
-This O
+this O
 quaint O
 and O
 romantic O
@@ -4148,13 +4148,13 @@ the O
 top O
 of O
 my O
-Manhattan O
+manhattan O
 restaurant O
 list O
 #PUNCT# O
 
-The O
-steak B-positive
+the O
+steak O
 was O
 done O
 to O
@@ -4172,7 +4172,7 @@ and O
 juicy O
 #PUNCT# O
 
-The O
+the O
 three O
 of O
 us O
@@ -4195,29 +4195,29 @@ there O
 were O
 #PUNCT# O
 
-Service B-positive
+service B-positive
 was O
 prompt O
 #PUNCT# O
 friendly O
 and O
 great O
-#PUNCT# B-positive
+#PUNCT# O
 
 limited O
-menu B-neutral
+menu O
 #PUNCT# O
 no-so-fresh O
 ingredients O
 #PUNCT# O
 thinly-sliced O
-fish B-negative
+fish O
 #PUNCT# O
 fall-apart O
 rice O
 #PUNCT# O
 
-However O
+however O
 #PUNCT# O
 it O
 is O
@@ -4230,7 +4230,7 @@ praise O
 it O
 #PUNCT# O
 
-We O
+we O
 got O
 most O
 of O
@@ -4242,7 +4242,7 @@ with O
 us O
 #PUNCT# O
 
-This O
+this O
 is O
 by O
 far O
@@ -4254,7 +4254,7 @@ the O
 neighborhood O
 #PUNCT# O
 
-Will O
+will O
 absolutely O
 visit O
 again O
@@ -4267,7 +4267,7 @@ your O
 luck O
 #PUNCT# O
 
-There O
+there O
 is O
 only O
 one O
@@ -4298,13 +4298,13 @@ little-tastier-than-normal O
 salsa O
 #PUNCT# O
 
-The O
+the O
 food B-positive
 was O
 great O
 #PUNCT# O
 
-Quick O
+quick O
 and O
 friendly O
 service B-positive

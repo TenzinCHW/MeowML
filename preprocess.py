@@ -191,6 +191,42 @@ def compare_result(observed, predicted):
         print(' - Recall    : %.4f' % recl)
         print(' - F score   : %.4f' % f)
 
+def compare_result2(observed, predicted):
+    """Compare bewteen gold data and prediction data."""
+    total_observed = 0
+    total_predicted = 0
+    correct = {'entities': 0, 'sentiment': 0}
+
+    for example in observed:
+        observed_instance = observed[example]
+        predicted_instance = predicted[example]
+        total_observed += len(observed_instance)
+        total_predicted += len(predicted_instance)
+
+        for span in predicted_instance:
+            span_sent = span[0]
+            span_ne = (span[1], len(span) - 1)
+
+            for observed_span in observed_instance:
+                sent = observed_span[0]
+                ne = (observed_span[1], len(observed_span) - 1)
+
+                if span_ne == ne:
+                    correct['entities'] += 1
+                    if span_sent == sent:
+                        correct['sentiment'] += 1
+
+    fs = []
+    for t in ('entities', 'sentiment'):
+        prec = correct[t] / total_predicted
+        recl = correct[t] / total_observed
+        try:
+            f = 2 * prec * recl / (prec + recl)
+        except ZeroDivisionError:
+            f = 0
+        fs.append(f)
+    return fs
+
 
 if __name__ == '__main__':
     en_train = data_from_file2(languages[1] + '/train')
