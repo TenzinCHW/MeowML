@@ -34,7 +34,7 @@ def viterbi(sentence, words, possible_labels, a, em):
     @lru_cache(maxsize=128) # Cache all results for the current sentence
     def pai(k, v):
         word = sentence[k-1]
-        word = '#UNK#' if word not in words else word
+        word = word if word in words else '#UNK#'
 
         if k > 1:
 
